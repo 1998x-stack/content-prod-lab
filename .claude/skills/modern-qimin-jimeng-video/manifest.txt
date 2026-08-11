@@ -1,0 +1,9 @@
+SKILL.md
+manifest.txt
+references/brand-visual-style.md
+references/shot-grammar.md
+references/continuity.md
+references/six-volumes.md
+references/evidence-safety.md
+templates/output-template.md
+examples/laundry-detergent-30s.md

@@ -1,0 +1,9 @@
+article-to-short-video-script/
+├── SKILL.md
+├── manifest.txt
+└── references/
+    ├── video_rewrite_style.md
+    ├── platform_adaptation.md
+    ├── visual_and_assets.md
+    ├── fact_integrity.md
+    └── output_contract.md
