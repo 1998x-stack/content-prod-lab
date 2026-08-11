@@ -1,0 +1,9 @@
+SKILL.md
+README.md
+manifest.txt
+references/research-and-sourcing.md
+references/methodology.md
+references/wechat-editorial.md
+references/docx-production.md
+references/safety-and-neutrality.md
+templates/analysis-outline.md

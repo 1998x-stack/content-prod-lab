@@ -17,9 +17,15 @@ Nearly all produced content is in **Chinese** and is delivered as **`.docx`** fi
 - **`.claude/skills/docx/`** — a local standalone DOCX skill with a strict *render-and-verify* workflow (see below). This is the QA layer used by every other skill that ships a `.docx`.
 - **`.claude/skills/article-to-short-video-script/`** — skill → finished WeChat/current-affairs article → production-ready short-video package (hook, rewritten voiceover, shot list, platform adaptation, DOCX). Full video re-engineering, not summarization.
 - **`.claude/skills/wechat-high-energy-commentary/`** — skill → research → publish-ready WeChat Official Account article with images, delivered as DOCX.
+- **`.claude/skills/geopolitical-deep-analysis-wechat/`** — skill → source-grounded geopolitical deep analysis on countries/conflicts/trade/energy/security, multi-school interpretation + scenario forecasting, delivered as Chinese WeChat article DOCX.
 - **`.claude/skills/modern-qimin-jimeng-video/`** — skill → 现代齐民要术 life-science topics → 即梦 (Jimeng) AI animated short-video production scripts.
+- **`.claude/skills/pdfs/`** — skill → PDF processing: render → verify → operate → re-verify (reading, OCR, forms, redaction, conversion, diff).
+- **`.claude/skills/slides/`** — skill → PowerPoint/visual aid creation via pptxgenjs + bundled professional templates.
+- **`.claude/skills/spreadsheets/`** — skill → spreadsheet handling (read, clean, convert, generate).
 - **`dayouyuan/`** — working space for the WeChat-article → short-video pipeline. `prompts/` holds the writing prompts; finished deliverables live under `articles/YYYYMMDD/` (one dir per production date).
 - **`qiminyaosu/`** — working space for 现代齐民要术: topic bibles (`现代齐民要术_六卷选题圣经/`, docx + xlsx), `prompts/`, `articles/`, `docs/`.
+- **`geopolitical/`** — working space for geopolitical deep analysis (prompts/ + articles/YYYYMMDD/ deliverables).
+- **`docs/gotchas.md`** — append-run gotchas journal; check it when hitting an environment or workflow problem.
 
 ## How the skills work
 
