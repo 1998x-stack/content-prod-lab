@@ -1,0 +1,841 @@
+{
+  "project": "省市_2025年政府工作报告_深度研究_系列",
+  "description": "参照上海/杭州/北京系列版式，为全国各省市构建《2025年政府工作报告深度研究与\"容易被忽视的细节\"分析》DOCX。结构：封面 + 目录 + 执行摘要(含一页速览表) + 研究口径 + 城市特殊底盘 + 宏观错位 + N条被忽视细节 + 若干换挡/暗线章节 + 事后验证 + 未来主线 + 结论 + 附录A资料 + 附录B仪表盘。",
+  "scope_definition": "覆盖中国大陆 31 个省级行政区 + 香港/澳门/台湾(仅宏观数据、不涉主权表述)共 34 个省级单元；重点城市单列(广州/深圳/苏州/成都/武汉/西安/长沙/合肥/福州/厦门/青岛/郑州/哈尔滨等 15-20 个)。国家级报告(如全国政府工作报告)由独立任务处理，不在本 TODO。",
+  "source_convention": {
+    "rule": "数据以「本年政府工作报告(目标) + 当年统计公报 + 下一年度政府工作报告(对上一年的复盘)」三方交叉核验；来源 URL 逐条记入附录A。",
+    "primary_sources": [
+      "各地政府官网 政务公开/工作报告 栏目",
+      "各地统计局门户 统计公报/年度数据",
+      "各地人大网 决议/审查报告",
+      "权威转载(人民网/新华网/央广/地方党报)"
+    ],
+    "verification": "目标值(2025年初设定) 与 实际完成值(统计公报/2026报告) 必须对照列出，标注同比口径。"
+  },
+  "deliverable_format": "{省市}_2025年政府工作报告_深度研究_YYYY-MM-DD.docx",
+  "deliverable_dir": "/Users/x/Desktop/content-prod-lab/reports",
+  "status_lookup": {
+    "done": "已完成并交付(DOCX已生成)",
+    "qa_pending": "已生成DOCX，物理渲染QA(Png目检)待补",
+    "in_progress": "进行中(已开始数据采集或脚本搭建)",
+    "pending": "待构建",
+    "blocked": "已阻塞(如渲染环境未就绪/数据缺失)"
+  },
+  "priority_lookup": {
+    "P0": "一线城市/直辖市/头部经济省份——优先构建",
+    "P1": "副省级/重要省会/万亿级城市",
+    "P2": "一般省会/重点地级市/编号重要省份",
+    "P3": "边疆/人口流出/体量较小省份(数据门类简并)"
+  },
+  "difficulty_lookup": {
+    "low": "数据源充足、报告文本规范",
+    "medium": "需多方交叉、个别数据需估算",
+    "high": "数据口径复杂/跨境/结构性拆分占比高"
+  },
+  "render_gate_note": "渲染QA(Gate)依赖 LibreOffice(soffice) 将 docx 转 PDF，再以 pdf2image/pdftoppm 出 PNG 人工目检每一页。LibreOffice 下载曾卡在 ~170MB 未完成；正在使用 pdf2image 时需先确认 soffice 就绪并执行 /reload-skills。在未就绪前采用降级QA：文本结构核验 + 表格数检查 + 无乱码扫描。",
+  "reference_done": [
+    {
+      "id": "shanghai",
+      "region": "上海市",
+      "status": "done",
+      "file": "上海市_2025年政府工作报告_深度研究_2026-08-07.docx",
+      "build_script": null,
+      "note": "参考模板(增长换挡/财政/产业/人口暗线)"
+    },
+    {
+      "id": "hangzhou",
+      "region": "杭州市",
+      "status": "done",
+      "file": "杭州市_2025年政府工作报告_深度研究_2026-08-07.docx",
+      "build_script": null,
+      "note": "参考模板(AI之城/再工业化/八仙换挡)"
+    },
+    {
+      "id": "beijing",
+      "region": "北京市",
+      "status": "done",
+      "file": "北京市_2025年政府工作报告_深度研究_2026-08-13.docx",
+      "build_script": "build_beijing_report.py",
+      "note": "本轮构建完成；内容已核验(267段/6表/无乱码)。截图参考：作为其他省市的**可复用模板**，新建省市时复制并改造此脚本的 helper 函数(python-docx)。渲染QA门被LibreOffice下载卡住，待网络恢复后补做视觉校验。"
+    }
+  ],
+  "_template_reuse": {
+    "build_script": "build_beijing_report.py",
+    "helper_functions_to_reuse": [
+      "set_run",
+      "para(bold标记)",
+      "heading1/2",
+      "table表头配色",
+      "quote_box",
+      "bullet"
+    ],
+    "docx_params": {
+      "font": "微软雅黑",
+      "rFonts_westAsia": true,
+      "heading色": "深蓝",
+      "标题色": "红",
+      "表格": "TableGrid+深蓝页眉行"
+    }
+  },
+  "todo": [
+    {
+      "id": "tianjin",
+      "region": "天津市",
+      "level": "直辖市",
+      "scope": "省级单元",
+      "priority": "P0",
+      "difficulty": "medium",
+      "depends_on": null,
+      "status": "done",
+      "focus": "京津冀协同/港口经济/制造业/新能源/滨海新区/人口与财政承压/北方工业基地",
+      "done_file": "天津市_2025年政府工作报告_深度研究_2026-08-13.docx",
+      "build_script": "build_tianjin_report.py",
+      "done_note": "131段/5表/无乱码；结构仿照北京模板(盘活存量/港产城/财政/民营暗线)。渲染QA门待LibreOffice就绪后补。"
+    },
+    {
+      "id": "chongqing",
+      "region": "重庆市",
+      "level": "直辖市/省级单元",
+      "priority": "P0",
+      "difficulty": "medium",
+      "depends_on": null,
+      "status": "done",
+      "focus": "成渝双城/新能源汽车/电子信息/内陆开放/财政与搬迁/乡村振兴",
+      "done_file": "重庆市_2025年政府工作报告_深度研究_2026-08-13.docx",
+      "build_script": "build_chongqing_report.py",
+      "done_note": "152段/7表/无乱码；关键数据核验(GDP33757.93亿/+5.3%，新能源129.61万辆/+36%，进出口+12.0%，民营占61.6%，固投-0.7%/工业+8.5%/地产-14.7%，人口3187万/城镇化73.02%/60岁26.2%)。渲染QA门待LibreOffice就绪后补。"
+    },
+    {
+      "id": "guangdong",
+      "region": "广东省",
+      "level": "省份",
+      "priority": "P0",
+      "difficulty": "high",
+      "depends_on": [
+        "guangzhou",
+        "shenzhen"
+      ],
+      "status": "done",
+      "focus": "制造业当家/两大万亿集群/外贸外资/珠三角vs粤东西北/港澳联动/高水平开放门户",
+      "done_file": "广东省_2025年政府工作报告_深度研究_2026-08-13.docx",
+      "build_script": "build_guangdong_report.py",
+      "done_note": "146段/6表/无乱码；GDP 145846.76亿/+3.9%、规上工业+3.0%、高技术+6.2%(占34.7%)、进出口94941.6亿/+4.4%(占全国20.9%)、固投-17.3%/地产-23.6%、财政收入+3.0%/税收-4.0%、社零+2.8%、常住12859万/城镇化76.58%、居民收入+4.3%、实际外资+11.3%。"
+    },
+    {
+      "id": "jiangsu",
+      "region": "江苏省",
+      "level": "省份",
+      "priority": "P0",
+      "difficulty": "high",
+      "depends_on": [
+        "nanjing",
+        "suzhou"
+      ],
+      "status": "done",
+      "focus": "制造业大省/苏南vs苏北/园区经济/外贸外资/先进制造集群/城乡",
+      "done_file": "江苏省_2025年政府工作报告_深度研究_2026-08-13.docx",
+      "build_script": "build_jiangsu_report.py",
+      "done_note": "146段/6表/无乱码；GDP 142351.5亿/+5.3%、规上工业+6.5%、高技术+11.9%、高新技术占52.1%、装备占56%、进出口5.95万亿/+6.0%(出口+8.4%)、实际外资全国第一、固投-12.7%/地产-21.6%、财政收入+2.1%/税收+3.8%(占77.4%)、社零+3.3%、常住8518万/城镇化76.2%、民营占58.5%。"
+    },
+    {
+      "id": "zhejiang",
+      "region": "浙江省",
+      "level": "省份",
+      "priority": "P0",
+      "difficulty": "medium",
+      "depends_on": [
+        "hangzhou",
+        "ningbo"
+      ],
+      "status": "done",
+      "focus": "民营经济/数字经济/共同富裕/山区县/跨境贸易/海洋经济",
+      "done_file": "浙江省_2025年政府工作报告_深度研究_2026-08-13.docx",
+      "build_script": "build_zhejiang_report.py",
+      "done_note": "147段/6表/无乱码；GDP 94545亿/+5.5%、规上工业+6.9%、数字经济核心1.23万亿/+10.2%(占13%)、进出口55461亿/+5.4%(民企占82.2%)、地产投资-31%、财政+1.8%/税收+2.5%、常住6701万/城镇化76.4%、居民收入+4.8%。"
+    },
+    {
+      "id": "sichuan",
+      "region": "四川省",
+      "level": "省份",
+      "priority": "P0",
+      "difficulty": "high",
+      "depends_on": [
+        "chengdu"
+      ],
+      "status": "done",
+      "focus": "成渝经济圈/电子信息/装备制造/白酒/民族地区/人口大省转型/西部枢纽",
+      "done_file": "四川省_2025年政府工作报告_深度研究_2026-08-13.docx",
+      "build_script": "build_sichuan_report.py",
+      "done_note": "147段/6表/无乱码；GDP 67665.3亿/+5.5%(西部第一)、规上工业+6.5%、高技术+12.3%、锂电+45.1%、汽车115.1万辆/+29.6%、进出口10318.1亿/-1.3%、固投-2.4%/工业+7.3%、社零29135.4亿/+5.1%、财政收入+3.9%/税收+3.6%、常住8318万/城镇化61.38%、民营占56.4%、居民收入+5.2%。"
+    },
+    {
+      "id": "hubei",
+      "region": "湖北省",
+      "level": "省份",
+      "priority": "P0",
+      "difficulty": "medium",
+      "depends_on": [
+        "wuhan"
+      ],
+      "status": "done",
+      "focus": "中部崛起/武汉都市圈/光谷/汽车与光电子信息/粮食保障",
+      "done_file": "湖北省_2025年政府工作报告_深度研究_2026-08-13.docx",
+      "build_script": "build_hubei_report.py",
+      "done_note": "147段/6表/无乱码；GDP 62660.90亿/+5.5%、规上工业+6.9%、高技术+15.5%(占17.4%)、进出口+18.2%/出口+19.6%、财政收入+6.9%、社零+2.7%、固投+2.6%、常住5811万/城镇化67.39%。"
+    },
+    {
+      "id": "henan",
+      "region": "河南省",
+      "level": "省份",
+      "priority": "P0",
+      "difficulty": "medium",
+      "depends_on": [
+        "zhengzhou"
+      ],
+      "status": "done",
+      "focus": "农业大省/中原城市群/食品/装备制造/人口外流与城镇化/郑州都市圈",
+      "done_file": "河南省_2025年政府工作报告_深度研究_2026-08-13.docx",
+      "build_script": "build_henan_report.py",
+      "done_note": "147段/6表/无乱码；GDP 66632.79亿/+5.6%、规上工业+8.4%、重点集群占63.9%、进出口+14.1%/出口+18%、财政+2.5%/税收+0.8%、常住9744万/城镇化率~60%。渲染QA门待LibreOffice就绪后补。"
+    },
+    {
+      "id": "shandong",
+      "region": "山东省",
+      "level": "省份",
+      "priority": "P0",
+      "difficulty": "high",
+      "depends_on": [
+        "qingdao",
+        "jinan"
+      ],
+      "status": "done",
+      "focus": "北方经济大省/海洋强省/绿色低碳/新旧动能转换/乡村振兴",
+      "done_file": "山东省_2025年政府工作报告_深度研究_2026-08-13.docx",
+      "build_script": "build_shandong_report.py",
+      "done_note": "147段/6表/无乱码；GDP 103197.5亿/+5.5%(北方首个破10万亿)、规上工业+7.6%、装备+11.4%、新能源车110.5万辆/+50.3%、锂电+103.1%、进出口3.53万亿(民企占76.3%)、固投-8.6%、社零42082.9亿/+5.1%、财政收入+2.0%/税收+1.4%、常住10043万/城镇化67.54%、居民收入+5.0%。"
+    },
+    {
+      "id": "anhui",
+      "region": "安徽省",
+      "level": "省份",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "hefei"
+      ],
+      "status": "pending",
+      "focus": "科技创新/量子信息/新能源汽车/对接长三角"
+    },
+    {
+      "id": "fujian",
+      "region": "福建省",
+      "level": "省份",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "fuzhou",
+        "xiamen"
+      ],
+      "status": "pending",
+      "focus": "海峡西岸/民营经济发达/海洋强省/福州厦门都市圈"
+    },
+    {
+      "id": "shaanxi",
+      "region": "陕西省",
+      "level": "省份",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "xian"
+      ],
+      "status": "pending",
+      "focus": "硬科技/能源化工/陕北/关中平原/生态文明"
+    },
+    {
+      "id": "hunan",
+      "region": "湖南省",
+      "level": "省份",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "changsha"
+      ],
+      "status": "pending",
+      "focus": "工程机械/文创新生/食品医药/基础设施建设/中部崛起"
+    },
+    {
+      "id": "hebei",
+      "region": "河北省",
+      "level": "省份",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": null,
+      "status": "pending",
+      "focus": "京津冀协同/钢铁与低碳/雄安新区/产业疏解承接/人口外流"
+    },
+    {
+      "id": "liaoning",
+      "region": "辽宁省",
+      "level": "省份·东北",
+      "priority": "P1",
+      "difficulty": "high",
+      "depends_on": [
+        "shenyang",
+        "dalian"
+      ],
+      "status": "pending",
+      "focus": "老工业基地/沿海经济带/冰雪/装备制造/人口与财政"
+    },
+    {
+      "id": "jiangxi",
+      "region": "江西省",
+      "level": "省份",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "nanchang"
+      ],
+      "status": "pending",
+      "focus": "有色金属/绿色生态/红色旅游/中部崛起/电子信息"
+    },
+    {
+      "id": "hainan",
+      "region": "海南省",
+      "level": "省份",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "haikou"
+      ],
+      "status": "pending",
+      "focus": "自贸港封关运作/免税消费/热带农业/海洋经济/旅游升级"
+    },
+    {
+      "id": "yunnan",
+      "region": "云南省",
+      "level": "省份",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "kunming"
+      ],
+      "status": "pending",
+      "focus": "绿色能源/生物多样性/旅游大省/面向南亚东南亚门户/乡村振兴"
+    },
+    {
+      "id": "guizhou",
+      "region": "贵州省",
+      "level": "省份",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "guiyang"
+      ],
+      "status": "pending",
+      "focus": "大数据/白酒/旅游/扶贫成果/数字经济体验区"
+    },
+    {
+      "id": "guangxi",
+      "region": "广西壮族自治区",
+      "level": "自治区",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "nanning"
+      ],
+      "status": "pending",
+      "focus": "面向东盟/港口/西部陆海新通道/平陆运河/特色农业"
+    },
+    {
+      "id": "shanxi",
+      "region": "山西省",
+      "level": "省份",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": null,
+      "status": "pending",
+      "focus": "煤炭与能源/新型综合能源/生态修复/产业转型"
+    },
+    {
+      "id": "neimenggu",
+      "region": "内蒙古自治区",
+      "level": "自治区",
+      "priority": "P1",
+      "difficulty": "low",
+      "depends_on": null,
+      "status": "done",
+      "focus": "能源重镇/绿色能源/乳业/稀土/草原生态",
+      "done_file": "内蒙古自治区_2025年政府工作报告_深度研究_2026-08-13.docx",
+      "build_script": "build_neimenggu_report.py",
+      "done_note": "146段/6表/无乱码；GDP 26710.3亿/+4.7%、三次产业 11.4:42.3:46.4、规上工业+6.7%、装备+20.6%、高技术+17.5%、新能源及产业+18%、稀土产业+32%、原煤12.87亿吨/-1%、进出口2209.6亿/+6.5%、固投+4.0%/民间+8.8%/基建+8.9%、社零5375.5亿/+4.3%、财政收入-4.6%/税收-4.4%、常住2374万/城镇化71.48%、居民收入41921元/+4.6%、PPI-7.0%。"
+    },
+    {
+      "id": "heilongjiang",
+      "region": "黑龙江省",
+      "level": "省份·东北",
+      "priority": "P1",
+      "difficulty": "high",
+      "depends_on": [
+        "harbin"
+      ],
+      "status": "pending",
+      "focus": "冰雪经济/装备制造/对俄贸易/粮食基地/人口外流"
+    },
+    {
+      "id": "jilin",
+      "region": "吉林省",
+      "level": "省份·东北",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "changchun"
+      ],
+      "status": "pending",
+      "focus": "汽车/冰雪/人参医药/对俄朝/装备制造"
+    },
+    {
+      "id": "gansu",
+      "region": "甘肃省",
+      "level": "省份",
+      "priority": "P2",
+      "difficulty": "medium",
+      "depends_on": [
+        "lanzhou"
+      ],
+      "status": "pending",
+      "focus": "有色/新能源/丝路走廊/生态屏障/乡村振兴"
+    },
+    {
+      "id": "qinghai",
+      "region": "青海省",
+      "level": "省份",
+      "priority": "P2",
+      "difficulty": "low",
+      "depends_on": [
+        "xining"
+      ],
+      "status": "pending",
+      "focus": "清洁能源/盐湖/高高原生态/保护与开发"
+    },
+    {
+      "id": "ningxia",
+      "region": "宁夏回族自治区",
+      "level": "自治区",
+      "priority": "P2",
+      "difficulty": "low",
+      "depends_on": null,
+      "status": "pending",
+      "focus": "新能源基地/特色农业/生态移民/文旅"
+    },
+    {
+      "id": "xinjiang",
+      "region": "新疆维吾尔自治区",
+      "level": "自治区",
+      "priority": "P2",
+      "difficulty": "high",
+      "depends_on": null,
+      "status": "pending",
+      "focus": "一带一路门户/陆上丝路/能源/棉花/旅游/民生与稳定"
+    },
+    {
+      "id": "xizang",
+      "region": "西藏自治区",
+      "level": "自治区",
+      "priority": "P2",
+      "difficulty": "high",
+      "depends_on": null,
+      "status": "pending",
+      "focus": "生态保护/高原旅游/对口支援/边境发展"
+    },
+    {
+      "id": "hongkong",
+      "region": "香港特别行政区",
+      "level": "特别行政区",
+      "priority": "P2",
+      "difficulty": "high",
+      "depends_on": null,
+      "status": "pending",
+      "focus": "国际金融/北部都会区/经济转型/财政/与内地联动(定期披露口径/系统性)"
+    },
+    {
+      "id": "macao",
+      "region": "澳门特别行政区",
+      "level": "特别行政区",
+      "priority": "P2",
+      "difficulty": "high",
+      "depends_on": null,
+      "status": "pending",
+      "focus": "博彩多元化/横琴粤澳合作/多元经济/与广东联动"
+    },
+    {
+      "id": "taiwan",
+      "region": "台湾省(中国的一部分，表述严谨)",
+      "level": "省级单元",
+      "priority": "P3",
+      "difficulty": "high",
+      "depends_on": null,
+      "status": "deferred",
+      "focus": "仅列宏观经济概况、不涉及主权表述；与大陆经贸、台商投资与两岸企业往来"
+    },
+    {
+      "id": "guangzhou",
+      "region": "广州市",
+      "level": "一线/省会/副省级",
+      "priority": "P0",
+      "difficulty": "medium",
+      "depends_on": null,
+      "status": "done",
+      "focus": "南沙自贸区/广深联动/制造业立市/民营经济/稳外资稳外贸/城中村改造/中新知识城",
+      "done_file": "广州市_2025年政府工作报告_深度研究_2026-08-13.docx",
+      "build_script": "build_guangzhou_report.py",
+      "done_note": "146段/6表/无乱码；GDP 32039.46亿/+4.0%、三次产业 0.99:24.06:74.95、规上工业+1.2%、先进制造占58.2%、装备占50.5%、数字经济核心产业+6.0%、战新占GDP32.4%、出口+17.8%/进出口+10.4%、固投-6.7%/办公楼-37.2%、社零11032.38亿/+5.5%、财政收入2184.82亿/+3.1%/税收占71.4%、常住1910.10万/城镇化87.56%、民营占43.1%、居民收入80591元/+3.6%。"
+    },
+    {
+      "id": "shenzhen",
+      "region": "深圳市",
+      "level": "一线/计划单列/副省级",
+      "priority": "P0",
+      "difficulty": "high",
+      "depends_on": null,
+      "status": "done",
+      "focus": "20+8产业集群/人工智能+机器人/科技金融/前海/外贸强外资弱/房地与土地财政退潮",
+      "done_file": "深圳市_2025年政府工作报告_深度研究_2026-08-13.docx",
+      "build_script": "build_shenzhen_report.py",
+      "done_note": "146段/6表/无乱码；GDP 38731.80亿/+5.5%(一线首位)、三次产业 0.1:37.4:62.5、规上工业+5.4%、高技术制造+5.6%(占59.9%)、战新占GDP43%、装备+8.2%(占72.6%)、机器人+43.1%/无人机+40.1%、进出口45533.89亿/+1.4%(高科技出口+10.1%)、固投-21.7%/工业-27.7%/地产-31.0%、社零10259.93亿/+2.3%、财政收入4163.77亿/+6.4%、常住1824.85万/城镇化99.79%、金融业+12.1%、居民收入84945元/+4.7%。"
+    },
+    {
+      "id": "nanjing",
+      "region": "南京市",
+      "level": "省会/副省级",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": null,
+      "status": "pending",
+      "focus": "软件名城/电力智能化/产学研/（呼应江苏省级）"
+    },
+    {
+      "id": "suzhou",
+      "region": "苏州市",
+      "level": "地级市/万亿",
+      "priority": "P0",
+      "difficulty": "medium",
+      "depends_on": [
+        "jiangsu"
+      ],
+      "status": "done",
+      "focus": "工业立市/生物医药/纳米/智能制造/外企依赖与转型/城乡一体",
+      "candidate": "可并在江苏省报告",
+      "done_file": "苏州市_2025年政府工作报告_深度研究_2026-08-13.docx",
+      "build_script": "build_suzhou_report.py",
+      "done_note": "146段/6表/无乱码；GDP 27695.1亿/+5.4%、三次产业 0.7:46.4:52.9、规上工业+7.6%、高新技术占56.2%、集成电路圆片+13.6%、机器人+20.6%、进出口28119.3亿/+7.4%(出口+7.6%、一带一路+17.3%、跨境+92.1%)、固投-6.5%/工业+6.1%、社零9092.2亿/+2.0%、财政收入2490.2亿/+1.3%/税收占83.4%、实际外资+12.3%、常住1304.77万/城镇化82.9%、居民收入80796元/+4.2%。"
+    },
+    {
+      "id": "ningbo",
+      "region": "宁波市",
+      "level": "计划单列",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "zhejiang"
+      ],
+      "status": "pending",
+      "focus": "港口经济/外贸/制造/民营（呼应浙江）"
+    },
+    {
+      "id": "chengdu",
+      "region": "成都市",
+      "level": "省会/副省级",
+      "priority": "P0",
+      "difficulty": "medium",
+      "depends_on": [
+        "sichuan"
+      ],
+      "status": "done",
+      "focus": "雪山下的公园城市/成渝双城/电子信息/消费/人口虹吸/新质生产力",
+      "done_file": "成都市_2025年政府工作报告_深度研究_2026-08-13.docx",
+      "build_script": "build_chengdu_report.py",
+      "done_note": "146段/6表/无乱码；GDP 24763.6亿/+5.8%、三次产业 2.2:27.9:69.9、规上工业+7.0%、汽车制造+17.8%、装备+16.1%、电子信息+9.8%、高技术制造+8.9%、社零11434.1亿/+5.5%(新能源车零售+45.8%)、进出口8502.3亿/+1.4%(高新技术出口+11.0%)、固投+2.2%/工业+19.7%、财政收入2000.7亿/+2.6%、常住2153.5万/城镇化81.46%、民营占50.6%、居民收入+4.5%。"
+    },
+    {
+      "id": "wuhan",
+      "region": "武汉市",
+      "level": "省会/副省级",
+      "priority": "P0",
+      "difficulty": "medium",
+      "depends_on": [
+        "hubei"
+      ],
+      "status": "done",
+      "focus": "光谷/九省通衢/产业投资/房地产调整/中部崛起",
+      "done_file": "武汉市_2025年政府工作报告_深度研究_2026-08-13.docx",
+      "build_script": "build_wuhan_report.py",
+      "done_note": "146段/6表/无乱码；GDP 22147.35亿/+5.6%(中部第一)、三次产业 2.2:29.7:68.1、规上工业+6.2%、高技术+16.6%(占26.2%)、电子/通信+18.9%、汽车+11.7%、进出口4548.5亿/+12.7%(出口+13.2%)、固投+2.0%/工业+9.7%/地产-4.1%、社零9013.96亿/+4.5%、财政收入1743.06亿/+4.5%/税收+0.1%、常住1386.19万/城镇化85.22%、高新企业1.7万家、居民收入62530元/+4.7%。"
+    },
+    {
+      "id": "xian",
+      "region": "西安市",
+      "level": "省会/副省级",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "shaanxi"
+      ],
+      "status": "pending",
+      "focus": "硬科技之都/航天/半导体/文旅/西北中心"
+    },
+    {
+      "id": "changsha",
+      "region": "长沙市",
+      "level": "省会",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "hunan"
+      ],
+      "status": "pending",
+      "focus": "工程机械之都/文创新/网红消费/民生/财政"
+    },
+    {
+      "id": "hefei",
+      "region": "合肥市",
+      "level": "省会",
+      "priority": "P0",
+      "difficulty": "medium",
+      "depends_on": [
+        "anhui"
+      ],
+      "status": "done",
+      "focus": "芯屏汽合/政府基金/量子/新能源/新型显示/人口虹吸",
+      "done_file": "合肥市_2025年政府工作报告_深度研究_2026-08-13.docx",
+      "build_script": "build_hefei_report.py",
+      "done_note": "146段/6表/无乱码；GDP 14210亿/+6.1%、规上工业+17.6%(近4年新高)、战新占规上60.4%、电子+60.6%、新能源车137万辆(占全国8.3%)、集成电路设计+36.5%、进出口4551.8亿/+20.2%(出口+23.6%)、固投-16.5%、社零5320.9亿/+3.2%、财政收入977.35亿/+2.3%/税收+3.4%、常住约1000万+、居民收入+5.5%。"
+    },
+    {
+      "id": "fuzhou",
+      "region": "福州市",
+      "level": "省会",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "fujian"
+      ],
+      "status": "pending",
+      "focus": "数字经济/海峡两岸/福州都市圈/民营"
+    },
+    {
+      "id": "xiamen",
+      "region": "厦门市",
+      "level": "计划单列",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "fujian"
+      ],
+      "status": "pending",
+      "focus": "金砖/自贸/外向型/产业结构与房价动态"
+    },
+    {
+      "id": "qingdao",
+      "region": "青岛市",
+      "level": "计划单列",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "shandong"
+      ],
+      "status": "pending",
+      "focus": "海洋/高端制造/家电/北方都市圈/工业出海"
+    },
+    {
+      "id": "jinan",
+      "region": "济南市",
+      "level": "省会/副省级",
+      "priority": "P2",
+      "difficulty": "medium",
+      "depends_on": [
+        "shandong"
+      ],
+      "status": "pending",
+      "focus": "新旧动能转换起/经济强省省会/装备制造/济南都市圈"
+    },
+    {
+      "id": "zhengzhou",
+      "region": "郑州市",
+      "level": "省会/国家中心城市",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "henan"
+      ],
+      "status": "pending",
+      "focus": "国家中心城市/交通枢纽/加工制造/中原城市扩张"
+    },
+    {
+      "id": "harbin",
+      "region": "哈尔滨市",
+      "level": "省会/副省级",
+      "priority": "P1",
+      "difficulty": "high",
+      "depends_on": [
+        "heilongjiang"
+      ],
+      "status": "pending",
+      "focus": "东北老工业/冰雪游/装备制造/人口外流攻坚"
+    },
+    {
+      "id": "changchun",
+      "region": "长春市",
+      "level": "省会/副省级",
+      "priority": "P2",
+      "difficulty": "medium",
+      "depends_on": [
+        "jilin"
+      ],
+      "status": "pending",
+      "focus": "汽车城/全球整车龙头/装备/冰雪"
+    },
+    {
+      "id": "shenyang",
+      "region": "沈阳市",
+      "level": "省会/副省级",
+      "priority": "P2",
+      "difficulty": "medium",
+      "depends_on": [
+        "liaoning"
+      ],
+      "status": "pending",
+      "focus": "老工业基地转型/装备/工业机器人/东北振兴"
+    },
+    {
+      "id": "dalian",
+      "region": "大连市",
+      "level": "计划单列/副省级",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "liaoning"
+      ],
+      "status": "pending",
+      "focus": "东北开放门户/港口/石化/海洋/软件IT"
+    },
+    {
+      "id": "kunming",
+      "region": "昆明市",
+      "level": "省会",
+      "priority": "P2",
+      "difficulty": "medium",
+      "depends_on": [
+        "yunnan"
+      ],
+      "status": "pending",
+      "focus": "面向南亚东南亚/旅游/生物医药/区域中心"
+    },
+    {
+      "id": "lanzhou",
+      "region": "兰州市",
+      "level": "省会",
+      "priority": "P2",
+      "difficulty": "low",
+      "depends_on": [
+        "gansu"
+      ],
+      "status": "pending",
+      "focus": "西北枢纽/有色/新能源装备/黄河治理"
+    },
+    {
+      "id": "guiyang",
+      "region": "贵阳市",
+      "level": "省会",
+      "priority": "P2",
+      "difficulty": "low",
+      "depends_on": [
+        "guizhou"
+      ],
+      "status": "pending",
+      "focus": "大数据之都/数博会/电子政务/影视文旅"
+    },
+    {
+      "id": "haikou",
+      "region": "海口市",
+      "level": "省会",
+      "priority": "P2",
+      "difficulty": "low",
+      "depends_on": [
+        "hainan"
+      ],
+      "status": "pending",
+      "focus": "自贸港核心城市/免税消费/现代服务业/旅游与贸易"
+    },
+    {
+      "id": "nanning",
+      "region": "南宁市",
+      "level": "省会",
+      "priority": "P2",
+      "difficulty": "low",
+      "depends_on": [
+        "guangxi"
+      ],
+      "status": "pending",
+      "focus": "东盟门户/平陆运河/跨境电商/面向东盟合作"
+    },
+    {
+      "id": "xining",
+      "region": "西宁市",
+      "level": "省会",
+      "priority": "P2",
+      "difficulty": "low",
+      "depends_on": [
+        "qinghai"
+      ],
+      "status": "pending",
+      "focus": "清洁能源/盐湖化工/民族文化旅游"
+    },
+    {
+      "id": "nanchang",
+      "region": "南昌市",
+      "level": "省会",
+      "priority": "P1",
+      "difficulty": "medium",
+      "depends_on": [
+        "jiangxi"
+      ],
+      "status": "pending",
+      "focus": "虚拟现实/绿色光电/现代制造/中部省会"
+    }
+  ],
+  "qa_and_render": {
+    "visual_gate": "docx→PDF(LibreOffice)→PNG(pdftoppm)人工目检；LibreOffice尚未就绪时用降级QA",
+    "fallback_qa": [
+      "文本结构核验(段落数/标题完整)",
+      "表格数检查(每节应含的表格)",
+      "无乱码扫描(非法字/替换格)"
+    ],
+    "release_trigger": "完成后运行未来 3 年 项目文档验证",
+    "reload_skills_marker": "下一次会话启动需先确认 LibreOffice 已就绪并执行 /reload-skills"
+  },
+  "completed_summary": {
+    "delivered_docs": 19,
+    "delivered": [
+      "上海",
+      "杭州",
+      "北京",
+      "天津",
+      "重庆",
+      "河南",
+      "湖北",
+      "浙江",
+      "广东",
+      "江苏",
+      "山东",
+      "四川",
+      "成都",
+      "广州",
+      "合肥",
+      "苏州",
+      "武汉",
+      "深圳",
+      "内蒙古"
+    ],
+    "in_this_session": "本轮构建完成重庆(P0)；天津已完成并交付。渲染QA门待LibreOffice就绪后对已产出的docx补充视觉校验。"
+  }
+}
