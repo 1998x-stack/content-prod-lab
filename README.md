@@ -26,7 +26,7 @@
 ## 📂 目录结构
 
 ```
-articles/
+content-prod-lab/
 ├── CLAUDE.md              # Claude Code 工作指南（本项目）
 ├── docs/
 │   └── gotchas.md         # 踩坑记录（可追加）
@@ -40,6 +40,10 @@ articles/
 │   ├── 现代齐民要术_六卷选题圣经/  # 六卷选题库（DOCX + XLSX）
 │   ├── prompts/  articles/  docs/
 ├── geopolitical/          # 地缘政治深度分析 工作区（prompts/ + articles/YYYYMMDD/）
+├── opencode/              # OpenCode/Claude Code 交付物（cookbook/ 教程/ 汇报/ 方案/ 深度研究）
+├── series/                # 系列长文（钢斧之后/ 等，命名 系列名_第X章_标题）
+├── reports/               # 城市/机构年度报告深度研究
+├── proposals/             # 技术/产品方案
 └── docs/
     └── gotchas.md         # 踩坑记录（可追加）
 ```

@@ -25,6 +25,10 @@ Nearly all produced content is in **Chinese** and is delivered as **`.docx`** fi
 - **`dayouyuan/`** — working space for the WeChat-article → short-video pipeline. `prompts/` holds the writing prompts; finished deliverables live under `articles/YYYYMMDD/` (one dir per production date).
 - **`qiminyaosu/`** — working space for 现代齐民要术: topic bibles (`现代齐民要术_六卷选题圣经/`, docx + xlsx), `prompts/`, `articles/`, `docs/`.
 - **`geopolitical/`** — working space for geopolitical deep analysis (prompts/ + articles/YYYYMMDD/ deliverables).
+- **`opencode/`** — OpenCode/Claude Code 相关交付物, 按类型分子目录: `cookbook/`(手册 PDF)、`教程/`、`汇报/`、`方案/`、`深度研究/`.
+- **`series/`** — 系列长文, 每条系列一个子目录 (e.g. `钢斧之后/`, 命名 `系列名_第X章_标题`).
+- **`reports/`** — 城市/机构年度报告深度研究 (命名 `城市_年份政府工作报告_深度研究_日期`).
+- **`proposals/`** — 技术/产品方案 (命名 `主题_方案名_v版本`).
 - **`docs/gotchas.md`** — append-run gotchas journal; check it when hitting an environment or workflow problem.
 
 ## How the skills work
