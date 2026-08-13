@@ -1,3 +1,15 @@
 .DS_Store
 .DS_Store/*
 *.zip
+.omo/
+.openscience/
+
+# Python / runtime junk
+.venv/
+__pycache__/
+*.pyc
+
+# agent runtime state dirs
+.ralph/
+.workbuddy-ai/
+.agent-sessions/
