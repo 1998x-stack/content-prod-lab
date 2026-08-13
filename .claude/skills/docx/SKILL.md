@@ -6,7 +6,16 @@ description: Create, edit, redline, and comment on `.docx` files inside the cont
 
 # DOCX Skill (Read • Create • Edit • Redline • Comment)
 
-Use this skill when you need to create or modify `.docx` files **in this container environment** and verify them visually.
+Use this skill when you need to create or modify `.docx` files on this machine and verify them visually.
+
+## Local environment (this machine)
+
+- **Python interpreter:** use the managed venv, not system `python3`:
+  `/Users/x/.workbuddy/binaries/python/envs/default/bin/python`
+  (deps already installed: `python-docx`, `lxml`, `openpyxl`, `pillow`, plus the PDF stack).
+- **LibreOffice:** installed at `/opt/homebrew/bin/soffice` (usable as `soffice`). `render_docx.py` and `render_and_diff.py` depend on it for headless rendering. Ensure `/opt/homebrew/bin` is on `PATH`.
+- **Scratch / output dirs:** use `/tmp` (or a workspace subfolder). The old `/mnt/data` container path has been replaced with `/tmp`.
+- Run scripts from inside the skill directory (i.e. `python scripts/...`), using the venv python above.
 
 ## Non-negotiable: render → inspect PNGs → iterate
 
@@ -197,11 +206,11 @@ This is a quick index so you can jump from a helper script to the right task gui
 Use the packaged renderer (dedicated LibreOffice profile + writable HOME):
 
 ```bash
-python render_docx.py /mnt/data/input.docx --output_dir /mnt/data/out
+python render_docx.py /tmp/input.docx --output_dir /tmp/out
 # If debugging LibreOffice:
-python render_docx.py /mnt/data/input.docx --output_dir /mnt/data/out --verbose
+python render_docx.py /tmp/input.docx --output_dir /tmp/out --verbose
 # Optional: also write <input_stem>.pdf to --output_dir (for debugging/archival):
-python render_docx.py /mnt/data/input.docx --output_dir /mnt/data/out --emit_pdf
+python render_docx.py /tmp/input.docx --output_dir /tmp/out --emit_pdf
 ```
 
 Then inspect the generated `page-<N>.png` files.

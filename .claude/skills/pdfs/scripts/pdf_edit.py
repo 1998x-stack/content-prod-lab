@@ -5,7 +5,7 @@ This is the main "structural edit" helper: merge/split/reorder/rotate/crop,
 watermarks, page-number overlays, (basic) form fill, and encryption.
 
 Golden rule: after ANY edit, render and visually verify:
-  python render_pdf.py out.pdf --out_dir /mnt/data/_renders/out
+  python render_pdf.py out.pdf --out_dir /tmp/_renders/out
 
 Subcommands:
   merge         Merge PDFs in order
@@ -24,9 +24,9 @@ Subcommands:
 
 Examples:
   python pdf_edit.py merge a.pdf b.pdf -o out.pdf
-  python pdf_edit.py split input.pdf --out_dir /mnt/data/split
+  python pdf_edit.py split input.pdf --out_dir /tmp/split
   python pdf_edit.py select input.pdf --pages 1-2,5 -o excerpt.pdf
-  python pdf_edit.py extract input.pdf --ranges 1-3,7,10-12 --out_dir /mnt/data/extract
+  python pdf_edit.py extract input.pdf --ranges 1-3,7,10-12 --out_dir /tmp/extract
   python pdf_edit.py rotate input.pdf --angle 90 --pages 1-3 -o rotated.pdf
   python pdf_edit.py crop input.pdf --inset 0.25in -o cropped.pdf
   python pdf_edit.py watermark input.pdf --watermark wm.pdf -o watermarked.pdf

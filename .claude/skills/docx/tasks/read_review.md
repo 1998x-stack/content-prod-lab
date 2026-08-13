@@ -13,21 +13,21 @@
 This is the “golden path” because it handles the container-safe LibreOffice profile + HOME automatically and normalizes output names to `page-<N>.png`.
 
 ```bash
-python render_docx.py /mnt/data/input.docx --output_dir /mnt/data/out
+python render_docx.py /tmp/input.docx --output_dir /tmp/out
 # If debugging LibreOffice:
-python render_docx.py /mnt/data/input.docx --output_dir /mnt/data/out --verbose
+python render_docx.py /tmp/input.docx --output_dir /tmp/out --verbose
 # Optional: also write <input_stem>.pdf to --output_dir (for debugging/archival):
-python render_docx.py /mnt/data/input.docx --output_dir /mnt/data/out --emit_pdf
+python render_docx.py /tmp/input.docx --output_dir /tmp/out --emit_pdf
 ```
 
 ### Manual method (only if debugging)
 Use a unique LibreOffice profile + writable HOME (containers are prone to profile permission/locking issues):
 
 ```bash
-OUTDIR=/mnt/data/out
-INPUT=/mnt/data/input.docx
+OUTDIR=/tmp/out
+INPUT=/tmp/input.docx
 BASENAME=$(basename "$INPUT" .docx)
-LO_PROFILE=/mnt/data/.lo_profile_${BASENAME}_$$
+LO_PROFILE=/tmp/.lo_profile_${BASENAME}_$$
 mkdir -p "$OUTDIR" "$LO_PROFILE"
 
 HOME="$LO_PROFILE" soffice --headless -env:UserInstallation=file://"$LO_PROFILE" \

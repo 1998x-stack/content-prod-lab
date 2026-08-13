@@ -5,8 +5,8 @@ Default renderer is poppler's `pdftoppm`.
 Optionally, you can use `pypdfium2` for faster rendering.
 
 Examples:
-  python render_pdf.py input.pdf --out_dir /mnt/data/_renders/input
-  python render_pdf.py input.pdf --out_dir /mnt/data/_renders/input --dpi 200 --pages 1-3
+  python render_pdf.py input.pdf --out_dir /tmp/_renders/input
+  python render_pdf.py input.pdf --out_dir /tmp/_renders/input --dpi 200 --pages 1-3
 
 Output naming:
   <out_dir>/<prefix>-1.png, <out_dir>/<prefix>-2.png, ...

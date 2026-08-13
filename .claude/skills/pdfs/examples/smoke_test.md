@@ -5,13 +5,13 @@ This is a quick end-to-end check that the PDF tooling works.
 If you're debugging a regression, prefer the dedicated tests:
 
 ```bash
-python /home/oai/skills/pdfs/scripts/edit_smoketest.py --workdir /mnt/data/_pdf_edit_smoke
-python /home/oai/skills/pdfs/scripts/forms_smoketest.py --workdir /mnt/data/_pdf_forms_smoke
-python /home/oai/skills/pdfs/scripts/redact_smoketest.py --workdir /mnt/data/_pdf_redact_smoke
+python scripts/edit_smoketest.py --workdir /tmp/_pdf_edit_smoke
+python scripts/forms_smoketest.py --workdir /tmp/_pdf_forms_smoke
+python scripts/redact_smoketest.py --workdir /tmp/_pdf_redact_smoke
 ```
 
 ```bash
-mkdir -p /mnt/data/_pdf_smoke && cd /mnt/data/_pdf_smoke
+mkdir -p /tmp/_pdf_smoke && cd /tmp/_pdf_smoke
 
 # 1) Create a tiny PDF via ReportLab
 python - <<'PY'
@@ -31,39 +31,39 @@ print('Wrote', out)
 PY
 
 # 2) Render it
-python /home/oai/skills/pdfs/scripts/render_pdf.py sample.pdf --out_dir render
+python scripts/render_pdf.py sample.pdf --out_dir render
 
 # 3) Inspect metadata
-python /home/oai/skills/pdfs/scripts/pdf_inspect.py sample.pdf
+python scripts/pdf_inspect.py sample.pdf
 
 # 4) Extract text
-python /home/oai/skills/pdfs/scripts/pdf_extract.py text sample.pdf --method pdfplumber
+python scripts/pdf_extract.py text sample.pdf --method pdfplumber
 
 # 5) Add page numbers
-python /home/oai/skills/pdfs/scripts/pdf_edit.py paginate sample.pdf -o numbered.pdf
-python /home/oai/skills/pdfs/scripts/render_pdf.py numbered.pdf --out_dir render_numbered
+python scripts/pdf_edit.py paginate sample.pdf -o numbered.pdf
+python scripts/render_pdf.py numbered.pdf --out_dir render_numbered
 
 # 6) Visual diff
-python /home/oai/skills/pdfs/scripts/compare_renders.py sample.pdf numbered.pdf --out_dir diff --dpi 200
+python scripts/compare_renders.py sample.pdf numbered.pdf --out_dir diff --dpi 200
 ```
 
 ## Optional extras
 
 ### Preflight + normalize
 ```bash
-python /home/oai/skills/pdfs/scripts/pdf_preflight.py numbered.pdf
-python /home/oai/skills/pdfs/scripts/pdf_edit.py optimize numbered.pdf -o normalized.pdf --recover --optimize_streams --compress_streams
-python /home/oai/skills/pdfs/scripts/render_pdf.py normalized.pdf --out_dir render_normalized
+python scripts/pdf_preflight.py numbered.pdf
+python scripts/pdf_edit.py optimize numbered.pdf -o normalized.pdf --recover --optimize_streams --compress_streams
+python scripts/render_pdf.py normalized.pdf --out_dir render_normalized
 ```
 
 ### True redaction (remove underlying text)
 ```bash
-python /home/oai/skills/pdfs/scripts/pdf_redact.py text numbered.pdf redacted.pdf --text "Hello" --ignore_case
+python scripts/pdf_redact.py text numbered.pdf redacted.pdf --text "Hello" --ignore_case
 pdftotext redacted.pdf - | grep -i "hello" && echo "STILL PRESENT" || echo "OK: not found"
-python /home/oai/skills/pdfs/scripts/render_pdf.py redacted.pdf --out_dir render_redacted
+python scripts/render_pdf.py redacted.pdf --out_dir render_redacted
 ```
 
 ### Renderer parity
 ```bash
-python /home/oai/skills/pdfs/scripts/renderer_parity.py redacted.pdf --out_dir parity --dpi 200
+python scripts/renderer_parity.py redacted.pdf --out_dir parity --dpi 200
 ```

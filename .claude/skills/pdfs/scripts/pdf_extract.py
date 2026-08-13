@@ -13,10 +13,10 @@ Subcommands:
   forms        - list form fields
 
 Examples:
-  python pdf_extract.py text input.pdf --method pdfplumber --out /mnt/data/text.txt
+  python pdf_extract.py text input.pdf --method pdfplumber --out /tmp/text.txt
   python pdf_extract.py words input.pdf --out words.csv
-  python pdf_extract.py tables input.pdf --out_dir /mnt/data/tables --format xlsx
-  python pdf_extract.py images input.pdf --out_dir /mnt/data/images
+  python pdf_extract.py tables input.pdf --out_dir /tmp/tables --format xlsx
+  python pdf_extract.py images input.pdf --out_dir /tmp/images
 
 Notes:
   - pdfplumber coordinates are top-left origin; y increases downward.

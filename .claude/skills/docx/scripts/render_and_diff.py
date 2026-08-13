@@ -24,7 +24,7 @@ diff. This catches content regressions even when page rendering shifts.
 
 Usage
 -----
-python scripts/render_and_diff.py a.docx b.docx --outdir /mnt/data/diff
+python scripts/render_and_diff.py a.docx b.docx --outdir /tmp/diff
 """
 
 from __future__ import annotations

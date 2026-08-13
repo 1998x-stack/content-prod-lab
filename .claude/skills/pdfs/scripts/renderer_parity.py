@@ -6,7 +6,7 @@ Use cases
 - Quickly catch renderer-sensitive issues (missing glyphs, clipped elements, etc.).
 
 Golden path
-  python renderer_parity.py input.pdf --out_dir /mnt/data/_parity --dpi 200
+  python renderer_parity.py input.pdf --out_dir /tmp/_parity --dpi 200
 
 Outputs
   - out_dir/render_pdftoppm/page-*.png

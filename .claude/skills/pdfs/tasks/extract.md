@@ -16,7 +16,7 @@ If the PDF is scanned: OCR first (`tasks/ocr.md`).
 ## Metadata / structure
 
 ```bash
-python /home/oai/skills/pdfs/scripts/pdf_inspect.py input.pdf --json > /mnt/data/_tmp/info.json
+python scripts/pdf_inspect.py input.pdf --json > /tmp/_tmp/info.json
 ```
 
 For poppler metadata:
@@ -32,14 +32,14 @@ pdfinfo input.pdf
 For quick, lossy text:
 
 ```bash
-pdftotext input.pdf - > /mnt/data/_tmp/text.txt
+pdftotext input.pdf - > /tmp/_tmp/text.txt
 ```
 
 For configurable extraction:
 
 ```bash
-python /home/oai/skills/pdfs/scripts/pdf_extract.py text input.pdf --method pdfplumber --out /mnt/data/_tmp/text.txt
-python /home/oai/skills/pdfs/scripts/pdf_extract.py text input.pdf --method pymupdf   --out /mnt/data/_tmp/text_pymupdf.txt
+python scripts/pdf_extract.py text input.pdf --method pdfplumber --out /tmp/_tmp/text.txt
+python scripts/pdf_extract.py text input.pdf --method pymupdf   --out /tmp/_tmp/text_pymupdf.txt
 ```
 
 Tip: when order matters (multi-column), prefer `pymupdf` blocks/words or `pdfplumber` word boxes over plain text.
@@ -51,8 +51,8 @@ Tip: when order matters (multi-column), prefer `pymupdf` blocks/words or `pdfplu
 ### Words
 
 ```bash
-python /home/oai/skills/pdfs/scripts/pdf_extract.py words input.pdf --method pdfplumber --out /mnt/data/_tmp/words.csv
-python /home/oai/skills/pdfs/scripts/pdf_extract.py words input.pdf --method pymupdf   --out /mnt/data/_tmp/words_pymupdf.csv
+python scripts/pdf_extract.py words input.pdf --method pdfplumber --out /tmp/_tmp/words.csv
+python scripts/pdf_extract.py words input.pdf --method pymupdf   --out /tmp/_tmp/words_pymupdf.csv
 ```
 
 CSV includes: `page, text, x0, top, x1, bottom`.
@@ -64,7 +64,7 @@ Coordinate notes:
 ### Characters (fine-grained)
 
 ```bash
-python /home/oai/skills/pdfs/scripts/pdf_extract.py chars input.pdf --out /mnt/data/_tmp/chars.csv
+python scripts/pdf_extract.py chars input.pdf --out /tmp/_tmp/chars.csv
 ```
 
 Use chars when you need tight alignment, kerning, or to rebuild table structure.
@@ -76,13 +76,13 @@ Use chars when you need tight alignment, kerning, or to rebuild table structure.
 ### Basic table extraction (pdfplumber)
 
 ```bash
-python /home/oai/skills/pdfs/scripts/pdf_extract.py tables input.pdf --out_dir /mnt/data/_tmp/tables
+python scripts/pdf_extract.py tables input.pdf --out_dir /tmp/_tmp/tables
 ```
 
 This creates per-table CSVs and (optionally) a single XLSX workbook:
 
 ```bash
-python /home/oai/skills/pdfs/scripts/pdf_extract.py tables input.pdf --xlsx /mnt/data/_tmp/tables.xlsx
+python scripts/pdf_extract.py tables input.pdf --xlsx /tmp/_tmp/tables.xlsx
 ```
 
 Table extraction is heuristic. If results are wrong:
@@ -97,13 +97,13 @@ Table extraction is heuristic. If results are wrong:
 ### Extract embedded images (PyMuPDF)
 
 ```bash
-python /home/oai/skills/pdfs/scripts/pdf_extract.py images input.pdf --out_dir /mnt/data/_tmp/images
+python scripts/pdf_extract.py images input.pdf --out_dir /tmp/_tmp/images
 ```
 
 ### Extract images via Poppler (sometimes better for certain PDFs)
 
 ```bash
-pdfimages -all input.pdf /mnt/data/_tmp/pdfimages/out
+pdfimages -all input.pdf /tmp/_tmp/pdfimages/out
 ```
 
 ---
@@ -111,14 +111,14 @@ pdfimages -all input.pdf /mnt/data/_tmp/pdfimages/out
 ## Embedded files (attachments)
 
 ```bash
-python /home/oai/skills/pdfs/scripts/pdf_extract.py attachments input.pdf --out_dir /mnt/data/_tmp/attachments
+python scripts/pdf_extract.py attachments input.pdf --out_dir /tmp/_tmp/attachments
 ```
 
 Poppler alternative:
 
 ```bash
 pdfdetach -list input.pdf
-pdfdetach -saveall -o /mnt/data/_tmp/attachments input.pdf
+pdfdetach -saveall -o /tmp/_tmp/attachments input.pdf
 ```
 
 ---
@@ -126,7 +126,7 @@ pdfdetach -saveall -o /mnt/data/_tmp/attachments input.pdf
 ## Annotations
 
 ```bash
-python /home/oai/skills/pdfs/scripts/pdf_extract.py annotations input.pdf --out /mnt/data/_tmp/annots.json
+python scripts/pdf_extract.py annotations input.pdf --out /tmp/_tmp/annots.json
 ```
 
 ---
@@ -136,8 +136,8 @@ python /home/oai/skills/pdfs/scripts/pdf_extract.py annotations input.pdf --out 
 List fields:
 
 ```bash
-python /home/oai/skills/pdfs/scripts/pdf_extract.py forms input.pdf
-python /home/oai/skills/pdfs/scripts/pdf_extract.py forms input.pdf --include_widgets --out /mnt/data/fields.json
+python scripts/pdf_extract.py forms input.pdf
+python scripts/pdf_extract.py forms input.pdf --include_widgets --out /tmp/fields.json
 ```
 
 Fill fields:

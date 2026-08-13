@@ -4,8 +4,8 @@
 Intended for quickly skimming multi-page renders.
 
 Examples:
-  python create_montage.py /mnt/data/_renders/input --out /mnt/data/montage.png
-  python create_montage.py /mnt/data/_renders/input/page-*.png --out /mnt/data/montage.png --cols 4
+  python create_montage.py /tmp/_renders/input --out /tmp/montage.png
+  python create_montage.py /tmp/_renders/input/page-*.png --out /tmp/montage.png --cols 4
 
 Notes:
   - Inputs must be raster images (PNG/JPEG).

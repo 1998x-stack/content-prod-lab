@@ -15,7 +15,7 @@ Goal: **values are actually embedded** (not just viewer-generated appearance) an
 1) Inspect fields
 
 ```bash
-python /home/oai/skills/pdfs/scripts/pdf_extract.py forms input.pdf --out /mnt/data/fields.json --include_widgets
+python scripts/pdf_extract.py forms input.pdf --out /tmp/fields.json --include_widgets
 ```
 
 Look for:
@@ -26,21 +26,21 @@ Look for:
 2) Fill + (optionally) flatten via pdf-lib
 
 ```bash
-bash /home/oai/skills/pdfs/js/install_deps.sh
-node /home/oai/skills/pdfs/js/fill_form.mjs --input input.pdf --values values.json --output filled.pdf --flatten
+bash js/install_deps.sh
+node js/fill_form.mjs --input input.pdf --values values.json --output filled.pdf --flatten
 ```
 
 3) Verify visually (render and inspect)
 
 ```bash
-python /home/oai/skills/pdfs/scripts/render_pdf.py filled.pdf --out_dir /mnt/data/_renders/filled --pages 1
-open /mnt/data/_renders/filled/page-1.png
+python scripts/render_pdf.py filled.pdf --out_dir /tmp/_renders/filled --pages 1
+open /tmp/_renders/filled/page-1.png
 ```
 
 4) Verify the values are real (not viewer-only)
 
 ```bash
-python /home/oai/skills/pdfs/scripts/pdf_extract.py forms filled.pdf --out /mnt/data/filled_fields.json
+python scripts/pdf_extract.py forms filled.pdf --out /tmp/filled_fields.json
 ```
 
 Success criteria:
@@ -57,13 +57,13 @@ All JS helpers support both positional and flags.
 Preferred (flags):
 
 ```bash
-node /home/oai/skills/pdfs/js/fill_form.mjs --input in.pdf --values values.json --output out.pdf --flatten
+node js/fill_form.mjs --input in.pdf --values values.json --output out.pdf --flatten
 ```
 
 Also valid (positional):
 
 ```bash
-node /home/oai/skills/pdfs/js/fill_form.mjs in.pdf values.json out.pdf --flatten
+node js/fill_form.mjs in.pdf values.json out.pdf --flatten
 ```
 
 ---
@@ -83,14 +83,14 @@ What to do:
 2) If flattening is not possible, verify in at least **two renderers**:
 
 ```bash
-python /home/oai/skills/pdfs/scripts/render_pdf.py filled.pdf --engine pdftoppm --out_dir /mnt/data/_r1
-python /home/oai/skills/pdfs/scripts/render_pdf.py filled.pdf --engine pdfium  --out_dir /mnt/data/_r2
+python scripts/render_pdf.py filled.pdf --engine pdftoppm --out_dir /tmp/_r1
+python scripts/render_pdf.py filled.pdf --engine pdfium  --out_dir /tmp/_r2
 ```
 
 3) Confirm values exist structurally:
 
 ```bash
-python /home/oai/skills/pdfs/scripts/pdf_extract.py forms filled.pdf --out /mnt/data/filled_fields.json
+python scripts/pdf_extract.py forms filled.pdf --out /tmp/filled_fields.json
 ```
 
 ---

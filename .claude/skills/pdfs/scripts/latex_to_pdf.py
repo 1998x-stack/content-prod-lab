@@ -2,9 +2,9 @@
 """Compile LaTeX to PDF using latexmk.
 
 Examples:
-  python latex_to_pdf.py main.tex --out_dir /mnt/data/out
-  python latex_to_pdf.py main.tex --out_dir /mnt/data/out --engine xelatex
-  python latex_to_pdf.py main.tex -o /mnt/data/out.pdf --engine xelatex
+  python latex_to_pdf.py main.tex --out_dir /tmp/out
+  python latex_to_pdf.py main.tex --out_dir /tmp/out --engine xelatex
+  python latex_to_pdf.py main.tex -o /tmp/out.pdf --engine xelatex
 
 Notes:
 - latexmk runs multiple passes as needed.

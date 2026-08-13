@@ -11,7 +11,7 @@ What it does:
   3) Exports a JSON spec with rectangles converted into PDF user-space points (pt)
 
 Golden path:
-  python box_picker_html.py input.pdf --page 1 --dpi 200 --out /mnt/data/box_picker.html
+  python box_picker_html.py input.pdf --page 1 --dpi 200 --out /tmp/box_picker.html
   # Open the HTML in a browser, draw boxes, export JSON.
 
 JSON output (from the UI):
@@ -71,7 +71,7 @@ def main() -> int:
     p.add_argument("--page", type=int, default=1)
     p.add_argument("--dpi", type=int, default=200)
     p.add_argument("--out", required=True, help="Output HTML path")
-    p.add_argument("--tmp_dir", default="/mnt/data/_box_picker", help="Temp render directory")
+    p.add_argument("--tmp_dir", default="/tmp/_box_picker", help="Temp render directory")
     args = p.parse_args()
 
     inp = Path(args.input_pdf)

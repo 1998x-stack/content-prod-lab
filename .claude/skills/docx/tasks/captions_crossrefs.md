@@ -33,8 +33,8 @@ This adds captions for tables and/or figures that don't already have a `Caption`
 
 ```bash
 python scripts/captions_and_crossrefs.py \
-  /mnt/data/in.docx \
-  /mnt/data/with_captions.docx \
+  /tmp/in.docx \
+  /tmp/with_captions.docx \
   --tables --figures \
   --caption_text "Caption" \
   --bookmarks
@@ -56,8 +56,8 @@ Then replace markers with real `REF` fields:
 
 ```bash
 python scripts/insert_ref_fields.py \
-  /mnt/data/with_captions.docx \
-  /mnt/data/with_refs.docx
+  /tmp/with_captions.docx \
+  /tmp/with_refs.docx
 ```
 
 Notes:
@@ -68,20 +68,20 @@ Notes:
 ### 3) Materialize (freeze) SEQ/REF results for deterministic renders
 ```bash
 python scripts/fields_materialize.py \
-  /mnt/data/with_refs.docx \
-  --out /mnt/data/with_refs_materialized.docx
+  /tmp/with_refs.docx \
+  --out /tmp/with_refs_materialized.docx
 ```
 
 Implementation note: `fields_materialize.py` materializes `SEQ` values before `REF` values so cross-references see the updated caption numbers.
 
 If you only want to materialize one type:
 ```bash
-python scripts/fields_materialize.py /mnt/data/with_refs.docx --out /mnt/data/out.docx --only REF
+python scripts/fields_materialize.py /tmp/with_refs.docx --out /tmp/out.docx --only REF
 ```
 
 ### 4) Render and visually QA
 ```bash
-python render_docx.py /mnt/data/with_refs_materialized.docx --output_dir /mnt/data/out_caps
+python render_docx.py /tmp/with_refs_materialized.docx --output_dir /tmp/out_caps
 ```
 Inspect the PNGs.
 

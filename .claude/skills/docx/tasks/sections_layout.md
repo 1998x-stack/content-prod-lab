@@ -14,7 +14,7 @@ If anything looks wrong after an edit (suddenly landscape pages, header disappea
 
 ## How to audit
 ```bash
-python scripts/section_audit.py /mnt/data/input.docx
+python scripts/section_audit.py /tmp/input.docx
 ```
 
 Look for:

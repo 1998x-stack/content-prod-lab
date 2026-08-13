@@ -10,7 +10,7 @@ Workflow:
   4) Apply overlay (merge) and re-render verification
 
 Golden path:
-  python place_text_by_boxes.py in.pdf spec.json values.json --out out.pdf --preview_pdf /mnt/data/_tmp/preview.pdf
+  python place_text_by_boxes.py in.pdf spec.json values.json --out out.pdf --preview_pdf /tmp/_tmp/preview.pdf
 
 spec.json example (rect in PDF points, origin bottom-left):
   {

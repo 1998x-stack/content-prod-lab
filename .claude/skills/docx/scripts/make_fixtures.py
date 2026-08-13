@@ -17,8 +17,8 @@ Outputs
 
 Usage
 -----
-python scripts/make_fixtures.py --outdir /mnt/data/fixtures
-python scripts/make_fixtures.py --outdir /mnt/data/fixtures --only tracked
+python scripts/make_fixtures.py --outdir /tmp/fixtures
+python scripts/make_fixtures.py --outdir /tmp/fixtures --only tracked
 
 Notes
 -----

@@ -8,7 +8,7 @@ Use this when the PDF is image-only (scan), and text extraction returns little o
 
 ```bash
 python -m pip install ocrmypdf
-python /home/oai/skills/pdfs/scripts/ocr_pdf.py scanned.pdf -o searchable.pdf --lang eng
+python scripts/ocr_pdf.py scanned.pdf -o searchable.pdf --lang eng
 ```
 
 Defaults (safe in this runtime):
@@ -19,14 +19,14 @@ Defaults (safe in this runtime):
 If you *must* run without `ocrmypdf`, use the explicit fallback pipeline:
 
 ```bash
-python /home/oai/skills/pdfs/scripts/ocr_pdf.py scanned.pdf -o searchable.pdf --lang eng --fallback
+python scripts/ocr_pdf.py scanned.pdf -o searchable.pdf --lang eng --fallback
 ```
 
 Verify:
 
 ```bash
-python /home/oai/skills/pdfs/scripts/render_pdf.py searchable.pdf --out_dir /mnt/data/_renders/ocr --pages 1
-python /home/oai/skills/pdfs/scripts/pdf_extract.py text searchable.pdf --method pdfplumber --out /mnt/data/_tmp/text.txt
+python scripts/render_pdf.py searchable.pdf --out_dir /tmp/_renders/ocr --pages 1
+python scripts/pdf_extract.py text searchable.pdf --method pdfplumber --out /tmp/_tmp/text.txt
 ```
 
 If it still doesn't extract well:

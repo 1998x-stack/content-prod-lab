@@ -32,19 +32,19 @@ Prefer real heading styles (`Heading 1/2/3`). If the document doesn't use headin
 If you want jump links for figures/tables, run:
 
 ```bash
-python scripts/captions_and_crossrefs.py /mnt/data/in.docx /mnt/data/with_caps.docx --figures --tables --bookmarks
+python scripts/captions_and_crossrefs.py /tmp/in.docx /tmp/with_caps.docx --figures --tables --bookmarks
 ```
 
 3) Add navigation
 
 ```bash
-python scripts/internal_nav.py /mnt/data/with_caps.docx --out /mnt/data/with_nav.docx
+python scripts/internal_nav.py /tmp/with_caps.docx --out /tmp/with_nav.docx
 ```
 
 4) Render and verify
 
 ```bash
-python render_docx.py /mnt/data/with_nav.docx --output_dir /mnt/data/out_nav
+python render_docx.py /tmp/with_nav.docx --output_dir /tmp/out_nav
 ```
 
 Verify:

@@ -10,7 +10,7 @@ A TOC is a **field**. It will not update unless fields are refreshed.
 If you need a deterministic TOC in a fully automated / headless flow, prefer the **static TOC** workflow:
 
 ```bash
-python scripts/internal_nav.py /mnt/data/input.docx --out /mnt/data/with_static_toc.docx
+python scripts/internal_nav.py /tmp/input.docx --out /tmp/with_static_toc.docx
 ```
 
 This builds a static TOC + internal links (TOC -> headings, headings -> Back to TOC) without relying on Word field updates.
@@ -31,7 +31,7 @@ See: `tasks/navigation_internal_links.md`.
 2) Run the inserter:
 
 ```bash
-python scripts/insert_toc.py /mnt/data/input.docx --out /mnt/data/with_toc.docx
+python scripts/insert_toc.py /tmp/input.docx --out /tmp/with_toc.docx
 ```
 
 Defaults: include Heading 1–3.
@@ -43,7 +43,7 @@ Defaults: include Heading 1–3.
 4) Render and visually verify:
 
 ```bash
-python render_docx.py /mnt/data/with_toc.docx --output_dir /mnt/data/out
+python render_docx.py /tmp/with_toc.docx --output_dir /tmp/out
 ```
 
 ## Render → PNG review checklist (TOC)

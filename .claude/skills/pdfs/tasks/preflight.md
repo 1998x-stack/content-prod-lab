@@ -5,17 +5,17 @@ Use this when a PDF behaves "weird" (can't open, renders inconsistently, extract
 ## Golden path
 1) Preflight:
 ```bash
-python /home/oai/skills/pdfs/scripts/pdf_preflight.py input.pdf
+python scripts/pdf_preflight.py input.pdf
 ```
 
 2) If it warns about corruption/xref/font embedding, normalize:
 ```bash
-python /home/oai/skills/pdfs/scripts/pdf_edit.py optimize input.pdf -o normalized.pdf --recover --optimize_streams --compress_streams
+python scripts/pdf_edit.py optimize input.pdf -o normalized.pdf --recover --optimize_streams --compress_streams
 ```
 
 3) Verify visually:
 ```bash
-python /home/oai/skills/pdfs/scripts/render_pdf.py normalized.pdf --out_dir /mnt/data/_norm_render --dpi 200
+python scripts/render_pdf.py normalized.pdf --out_dir /tmp/_norm_render --dpi 200
 ```
 
 ## Notes

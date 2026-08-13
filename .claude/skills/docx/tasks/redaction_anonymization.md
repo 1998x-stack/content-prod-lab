@@ -18,8 +18,8 @@ This bundle provides `scripts/redact_docx.py`, which redacts by editing OOXML te
 ## Run it
 ### Mask common patterns (examples)
 ```bash
-python scripts/redact_docx.py /mnt/data/input.docx \
-  --output /mnt/data/redacted.docx \
+python scripts/redact_docx.py /tmp/input.docx \
+  --output /tmp/redacted.docx \
   --pattern "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" \
   --pattern "\b\d{3}[-. ]\d{3}[-. ]\d{4}\b"
 ```
@@ -27,8 +27,8 @@ python scripts/redact_docx.py /mnt/data/input.docx \
 ### Replace with a stable token (length-preserving)
 If you want a visible label but still preserve length, repeat/truncate the label to the match length:
 ```bash
-python scripts/redact_docx.py /mnt/data/input.docx \
-  --output /mnt/data/redacted.docx \
+python scripts/redact_docx.py /tmp/input.docx \
+  --output /tmp/redacted.docx \
   --pattern "Acme Corp" \
   --replacement "[REDACTED]" \
   --preserve_length
@@ -36,8 +36,8 @@ python scripts/redact_docx.py /mnt/data/input.docx \
 
 ### Include comments (optional)
 ```bash
-python scripts/redact_docx.py /mnt/data/input.docx \
-  --output /mnt/data/redacted.docx \
+python scripts/redact_docx.py /tmp/input.docx \
+  --output /tmp/redacted.docx \
   --pattern "secret" \
   --include_comments
 ```

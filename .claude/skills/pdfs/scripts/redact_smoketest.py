@@ -6,8 +6,8 @@ Creates a small PDF containing a secret phrase, redacts it, and verifies:
 - rendered pixels differ
 
 Usage:
-  python redact_smoketest.py  # writes to /mnt/data/_pdf_redact_smoke
-  python redact_smoketest.py --workdir /mnt/data/_pdf_redact_smoke_custom
+  python redact_smoketest.py  # writes to /tmp/_pdf_redact_smoke
+  python redact_smoketest.py --workdir /tmp/_pdf_redact_smoke_custom
 """
 
 from __future__ import annotations
@@ -51,7 +51,7 @@ def _pixels_changed(a_png: Path, b_png: Path) -> bool:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--workdir", default="/mnt/data/_pdf_redact_smoke")
+    ap.add_argument("--workdir", default="/tmp/_pdf_redact_smoke")
     ap.add_argument("--dpi", type=int, default=200)
     args = ap.parse_args()
 

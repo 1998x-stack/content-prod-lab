@@ -19,7 +19,7 @@ Common fields:
 Run a quick field inventory:
 
 ```bash
-python scripts/fields_report.py /mnt/data/input.docx
+python scripts/fields_report.py /tmp/input.docx
 ```
 
 If you see `TOC`, `REF`, `PAGEREF`, `NUMPAGES`, or `PAGE`, plan for a field refresh step.
@@ -27,7 +27,7 @@ If you see `TOC`, `REF`, `PAGEREF`, `NUMPAGES`, or `PAGE`, plan for a field refr
 ### 2) Render and inspect
 
 ```bash
-python render_docx.py /mnt/data/input.docx --output_dir /mnt/data/out
+python render_docx.py /tmp/input.docx --output_dir /tmp/out
 ```
 
 Inspect all `page-*.png` at 100% zoom.

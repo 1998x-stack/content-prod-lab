@@ -44,12 +44,12 @@ print(wb.help("*", {"search": "fill|borders|autofit", "include": "index,examples
 ### Core workbook/file APIs
 - `from artifact_tool import Blob, Workbook, SpreadsheetFile`
 - `wb = Workbook.create()` + `sheet = wb.worksheets.add("Sheet1")`
-- `wb = SpreadsheetFile.import_xlsx(Blob.load("/mnt/data/input.xlsx"))`
-- `SpreadsheetFile.export_xlsx(wb).save("/mnt/data/output.xlsx")`
+- `wb = SpreadsheetFile.import_xlsx(Blob.load("/tmp/input.xlsx"))`
+- `SpreadsheetFile.export_xlsx(wb).save("/tmp/output.xlsx")`
 - `wb.inspect({...})` where inspect options, `sheet_id` + `range` are the canonical scoped fields in the generated inspect options.
 - `wb.help(query, {...})` (for obscure/unclear features)
 - Preferred: `wb.render({...})` which just returns the image bytes directly
-- `wb.render({...}).save("/mnt/data/preview.png")` only if you want to save it to a file
+- `wb.render({...}).save("/tmp/preview.png")` only if you want to save it to a file
 - `wb.from_csv(csv_text, {...})` (good for large tabular imports)
 
 ### Worksheet selection/creation
@@ -268,5 +268,5 @@ img = workbook.render({"sheet_name": "ExampleSheet", "auto_crop": "all", "scale"
 
 Export:
 ```python
-SpreadsheetFile.export_xlsx(workbook).save("/mnt/data/spreadsheet.xlsx")
+SpreadsheetFile.export_xlsx(workbook).save("/tmp/spreadsheet.xlsx")
 ```

@@ -7,6 +7,16 @@ description: Reliable, workflow-driven PDF processing: render → verify → ope
 
 This skill is designed for **reliable, workflow-driven** PDF work: **render -> verify -> operate -> re-render verify**.
 
+## Local environment (this machine)
+
+- **Python interpreter:** use the managed venv, not system `python3`:
+  `/Users/x/.workbuddy/binaries/python/envs/default/bin/python`
+  (deps already installed: `pymupdf`, `pypdf`, `pdfplumber`, `reportlab`, `pdf2image`, `python-docx`, `lxml`, `openpyxl`, `pillow`, `python-pptx`, `numpy`).
+- **LibreOffice:** installed at `/opt/homebrew/bin/soffice` (usable as `soffice`). Used by `lo_convert_to_pdf.py` and `render_pdf.py`'s LO path. Ensure `/opt/homebrew/bin` is on `PATH`.
+- **Node helpers (`js/`):** run `js/install_deps.sh` once (installs `pdf-lib`, `pdfjs-dist` into `js/node_modules`) to use form-fill or pdfjs extraction.
+- **Scratch / output dirs:** use `/tmp/<name>` (or a workspace subfolder). The old `/mnt/data` container path has been replaced with `/tmp`.
+- `html_to_pdf.py` needs Playwright + a browser; prefer LibreOffice conversion for HTML→PDF unless browser rendering is specifically required.
+
 ## Before you touch PDFs: should this be DOCX/PPTX instead?
 
 Even if the user asks for a PDF deliverable, the best workflow is often:
@@ -24,7 +34,7 @@ If you find yourself hand-tuning line breaks or typography in ReportLab, you pro
 1) Render to images
 
 ```bash
-python /home/oai/skills/pdfs/scripts/render_pdf.py input.pdf --out_dir /mnt/data/_renders/in --dpi 200
+python scripts/render_pdf.py input.pdf --out_dir /tmp/_renders/in --dpi 200
 ```
 
 2) Inspect PNGs (tables/figures/layout are authoritative)
@@ -34,7 +44,7 @@ python /home/oai/skills/pdfs/scripts/render_pdf.py input.pdf --out_dir /mnt/data
 4) Re-render and compare
 
 ```bash
-python /home/oai/skills/pdfs/scripts/compare_renders.py before.pdf after.pdf --out_dir /mnt/data/_diff --dpi 200
+python scripts/compare_renders.py before.pdf after.pdf --out_dir /tmp/_diff --dpi 200
 ```
 
 ---

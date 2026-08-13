@@ -15,28 +15,28 @@ This task doc focuses on **plain-text SDTs** (the most common case for templates
 
 2. **Wrap placeholders into SDTs**
 ```bash
-python scripts/content_controls.py /mnt/data/template.docx wrap_placeholders \
-  --output /mnt/data/template_sdt.docx
+python scripts/content_controls.py /tmp/template.docx wrap_placeholders \
+  --output /tmp/template_sdt.docx
 ```
 
 3. **Populate SDTs by tag**
 ```bash
-python scripts/content_controls.py /mnt/data/template_sdt.docx fill \
+python scripts/content_controls.py /tmp/template_sdt.docx fill \
   --set NAME="Ada Lovelace" \
   --set EMAIL="ada@example.com" \
-  --output /mnt/data/filled.docx
+  --output /tmp/filled.docx
 ```
 
 4. **Render for QA**
 ```bash
-python render_docx.py /mnt/data/filled.docx --output_dir /mnt/data/out_forms
+python render_docx.py /tmp/filled.docx --output_dir /tmp/out_forms
 ```
 Inspect `page-<N>.png` at 100% zoom.
 
 ## Listing / debugging
 List all SDTs (tag, alias, visible text, part location):
 ```bash
-python scripts/content_controls.py /mnt/data/template_sdt.docx list --json
+python scripts/content_controls.py /tmp/template_sdt.docx list --json
 ```
 
 ## Pitfalls / lessons learned

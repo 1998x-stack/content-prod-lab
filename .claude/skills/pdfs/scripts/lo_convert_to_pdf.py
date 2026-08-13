@@ -2,8 +2,8 @@
 """Convert an Office document (DOCX/PPTX/ODT/...) to PDF using LibreOffice.
 
 Examples:
-  python lo_convert_to_pdf.py input.docx --out_dir /mnt/data/out
-  python lo_convert_to_pdf.py deck.pptx --out_dir /mnt/data/out
+  python lo_convert_to_pdf.py input.docx --out_dir /tmp/out
+  python lo_convert_to_pdf.py deck.pptx --out_dir /tmp/out
 
 Notes:
 - Conversion quality varies by file. Always render the output PDF to images and inspect.

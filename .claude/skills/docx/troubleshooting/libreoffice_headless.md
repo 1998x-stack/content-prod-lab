@@ -10,19 +10,19 @@ Use the canonical helper (`render_docx.py`). It:
 - captures stdout/stderr so failures are diagnosable
 
 ```bash
-python render_docx.py /mnt/data/input.docx --output_dir /mnt/data/out
+python render_docx.py /tmp/input.docx --output_dir /tmp/out
 # If you're debugging a conversion failure:
-python render_docx.py /mnt/data/input.docx --output_dir /mnt/data/out --verbose
+python render_docx.py /tmp/input.docx --output_dir /tmp/out --verbose
 ```
 
 ## Fix (manual): profile + writable HOME
 If you must run `soffice` directly, do this:
 
 ```bash
-OUTDIR=/mnt/data/out
-INPUT=/mnt/data/input.docx
+OUTDIR=/tmp/out
+INPUT=/tmp/input.docx
 BASENAME=$(basename "$INPUT" .docx)
-LO_PROFILE=/mnt/data/.lo_profile_${BASENAME}_$$
+LO_PROFILE=/tmp/.lo_profile_${BASENAME}_$$
 mkdir -p "$OUTDIR" "$LO_PROFILE"
 
 HOME="$LO_PROFILE" soffice --headless -env:UserInstallation=file://"$LO_PROFILE" \
@@ -39,4 +39,4 @@ Prefer these success criteria over stderr:
 ## If you still get weird behavior
 - Ensure the profile directory is unique per process (use `$$` or a uuid)
 - Delete stale profiles between runs
-- Prefer `/mnt/data` over `/tmp` if you suspect permission sandboxing
+- Prefer `/tmp` over `/tmp` if you suspect permission sandboxing

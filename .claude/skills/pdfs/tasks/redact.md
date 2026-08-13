@@ -17,7 +17,7 @@ python pdf_redact.py text input.pdf redacted.pdf --text "TOP SECRET" \
 3) Verify (required)
 - Render and visually inspect:
 ```bash
-python render_pdf.py redacted.pdf --out_dir /mnt/data/_redacted_render --dpi 200
+python render_pdf.py redacted.pdf --out_dir /tmp/_redacted_render --dpi 200
 ```
 - Confirm the sensitive text is gone from extraction:
 ```bash

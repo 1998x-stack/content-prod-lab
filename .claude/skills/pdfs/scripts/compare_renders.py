@@ -2,12 +2,12 @@
 """Visual diff two PDFs by rendering pages and computing pixel diffs.
 
 Golden path:
-  python compare_renders.py a.pdf b.pdf --out_dir /mnt/data/_diff --dpi 200
+  python compare_renders.py a.pdf b.pdf --out_dir /tmp/_diff --dpi 200
 
 Outputs:
-  - /mnt/data/_diff/summary.json
-  - /mnt/data/_diff/diff/page-<N>.png (only for changed pages)
-  - /mnt/data/_diff/render_a/... and /mnt/data/_diff/render_b/... (renders)
+  - /tmp/_diff/summary.json
+  - /tmp/_diff/diff/page-<N>.png (only for changed pages)
+  - /tmp/_diff/render_a/... and /tmp/_diff/render_b/... (renders)
 
 Why this exists:
   Many PDF edits "succeed" structurally but fail visually (clipping, missing glyphs,

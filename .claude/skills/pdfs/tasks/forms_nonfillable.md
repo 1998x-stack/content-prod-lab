@@ -14,8 +14,8 @@ Core idea: **render -> define boxes -> preview overlay -> verify -> apply -> re-
 ### 1) Render the target page
 
 ```bash
-python /home/oai/skills/pdfs/scripts/render_pdf.py input.pdf --out_dir /mnt/data/_renders/in --pages 1 --dpi 200
-open /mnt/data/_renders/in/page-1.png
+python scripts/render_pdf.py input.pdf --out_dir /tmp/_renders/in --pages 1 --dpi 200
+open /tmp/_renders/in/page-1.png
 ```
 
 ### 2) Pick rectangles (boxes)
@@ -23,7 +23,7 @@ open /mnt/data/_renders/in/page-1.png
 Generate a self-contained HTML you can open in a browser:
 
 ```bash
-python /home/oai/skills/pdfs/scripts/box_picker_html.py input.pdf --page 1 --dpi 200 --out /mnt/data/box_picker.html
+python scripts/box_picker_html.py input.pdf --page 1 --dpi 200 --out /tmp/box_picker.html
 ```
 
 Open `box_picker.html`, drag rectangles, then **Export JSON**. Save it as `spec.json`.
@@ -55,12 +55,12 @@ Create a `values.json` mapping item name -> value:
 ### 4) Generate a preview overlay (guides) and inspect
 
 ```bash
-python /home/oai/skills/pdfs/scripts/place_text_by_boxes.py input.pdf spec.json values.json \
-  --out /mnt/data/_tmp/stamped.pdf \
-  --preview_pdf /mnt/data/_tmp/preview.pdf
+python scripts/place_text_by_boxes.py input.pdf spec.json values.json \
+  --out /tmp/_tmp/stamped.pdf \
+  --preview_pdf /tmp/_tmp/preview.pdf
 
-python /home/oai/skills/pdfs/scripts/render_pdf.py /mnt/data/_tmp/preview.pdf --out_dir /mnt/data/_renders/preview --pages 1
-open /mnt/data/_renders/preview/page-1.png
+python scripts/render_pdf.py /tmp/_tmp/preview.pdf --out_dir /tmp/_renders/preview --pages 1
+open /tmp/_renders/preview/page-1.png
 ```
 
 The preview should show red rectangles/labels (guides) and the stamped content.
@@ -70,8 +70,8 @@ The preview should show red rectangles/labels (guides) and the stamped content.
 Re-render the final output and confirm:
 
 ```bash
-python /home/oai/skills/pdfs/scripts/render_pdf.py /mnt/data/_tmp/stamped.pdf --out_dir /mnt/data/_renders/out --pages 1
-open /mnt/data/_renders/out/page-1.png
+python scripts/render_pdf.py /tmp/_tmp/stamped.pdf --out_dir /tmp/_renders/out --pages 1
+open /tmp/_renders/out/page-1.png
 ```
 
 ---

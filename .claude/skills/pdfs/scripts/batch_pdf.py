@@ -7,19 +7,19 @@ output directory conventions.
 Examples
 - Render all PDFs under a folder:
     python batch_pdf.py render \
-      --in_glob "/mnt/data/in/**/*.pdf" \
-      --out_root /mnt/data/out_renders \
+      --in_glob "/tmp/in/**/*.pdf" \
+      --out_root /tmp/out_renders \
       --dpi 200
 
 - Inspect all PDFs (JSON summary per file):
     python batch_pdf.py inspect \
-      --in_glob "/mnt/data/in/**/*.pdf" \
-      --out_root /mnt/data/out_inspect
+      --in_glob "/tmp/in/**/*.pdf" \
+      --out_root /tmp/out_inspect
 
 - Normalize/repair a corpus (PyMuPDF rewrite):
     python batch_pdf.py normalize \
-      --in_glob "/mnt/data/in/**/*.pdf" \
-      --out_root /mnt/data/out_norm
+      --in_glob "/tmp/in/**/*.pdf" \
+      --out_root /tmp/out_norm
 """
 
 from __future__ import annotations

@@ -7,7 +7,7 @@ What it tests:
   - Render before/after and run compare_renders to ensure pixels changed
 
 Run:
-  python forms_smoketest.py --workdir /mnt/data/_pdf_forms_smoke
+  python forms_smoketest.py --workdir /tmp/_pdf_forms_smoke
 """
 
 from __future__ import annotations
@@ -60,7 +60,7 @@ def _make_form_pdf(path: Path) -> None:
 
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--workdir", default="/mnt/data/_pdf_forms_smoke")
+    p.add_argument("--workdir", default="/tmp/_pdf_forms_smoke")
     p.add_argument("--dpi", type=int, default=200)
     args = p.parse_args()
 

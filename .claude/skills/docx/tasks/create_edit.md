@@ -44,4 +44,4 @@ If the user requests *real* tracked changes or *real* Word comments, plan for OO
 Use the loop from `tasks/verify_render.md` (DOCX → PNG) to avoid shipping layout defects. (Internally the renderer uses a PDF step; `--emit_pdf` can persist it if needed.)
 
 ## Output hygiene
-Keep `/mnt/data` clean: deliverables only unless the user asks for intermediate render artifacts.
+Keep `/tmp` clean: deliverables only unless the user asks for intermediate render artifacts.

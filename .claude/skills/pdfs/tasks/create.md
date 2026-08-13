@@ -35,7 +35,7 @@ Start from a clean Python script and re-render often.
 After generating:
 
 ```bash
-python /home/oai/skills/pdfs/scripts/render_pdf.py report.pdf --out_dir /mnt/data/_renders/report
+python scripts/render_pdf.py report.pdf --out_dir /tmp/_renders/report
 ```
 
 ---
@@ -45,7 +45,7 @@ python /home/oai/skills/pdfs/scripts/render_pdf.py report.pdf --out_dir /mnt/dat
 This environment has `pdflatex` and `latexmk`.
 
 ```bash
-python /home/oai/skills/pdfs/scripts/latex_to_pdf.py input.tex -o output.pdf
+python scripts/latex_to_pdf.py input.tex -o output.pdf
 ```
 
 Tips
@@ -59,7 +59,7 @@ Tips
 Pandoc is installed.
 
 ```bash
-python /home/oai/skills/pdfs/scripts/md_to_pdf.py input.md -o output.pdf
+python scripts/md_to_pdf.py input.md -o output.pdf
 ```
 
 Tips
@@ -73,7 +73,7 @@ Tips
 Chromium and Playwright are installed.
 
 ```bash
-python /home/oai/skills/pdfs/scripts/html_to_pdf.py input.html -o output.pdf
+python scripts/html_to_pdf.py input.html -o output.pdf
 ```
 
 Tips
@@ -87,7 +87,7 @@ Tips
 LibreOffice (`soffice`) is installed.
 
 ```bash
-python /home/oai/skills/pdfs/scripts/lo_convert_to_pdf.py input.docx --out_dir /mnt/data/_tmp
+python scripts/lo_convert_to_pdf.py input.docx --out_dir /tmp/_tmp
 ```
 
 This can be a better choice for:
@@ -96,8 +96,8 @@ This can be a better choice for:
 - "Business document" styling that is annoying in ReportLab
 
 Related: use the dedicated skills when creating the source file:
-- `/home/oai/skills/docs` for DOCX
-- `/home/oai/skills/slides` for PPTX
+- `<docx skill>/` for DOCX
+- `<slides skill>/` for PPTX
 
 ---
 
@@ -110,4 +110,4 @@ No matter the pipeline:
 3) inspect for clipping/overlaps/fonts
 4) iterate
 
-Finally, delete intermediate artifacts under `/mnt/data/_tmp` and `/mnt/data/_renders`.
+Finally, delete intermediate artifacts under `/tmp/_tmp` and `/tmp/_renders`.

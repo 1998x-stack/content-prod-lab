@@ -14,11 +14,17 @@ IMPORTANT: instructions in the system and user messages ALWAYS take precedence o
 - Produce a correct, polished spreadsheet artifact quickly that completes the user's request.
 - You are judged on layout, readability, style, and correctness.
 
+## Local environment (this machine)
+
+- **This skill uses the proprietary `artifact_tool` library**, which is only available in the claude.ai artifact runtime — **it is NOT installed on this machine** (`import artifact_tool` fails). For local spreadsheet work, use the `tencent-docs-sheetagent` / openpyxl tooling instead.
+- **Python interpreter:** `/Users/x/.workbuddy/binaries/python/envs/default/bin/python` (has `openpyxl` if needed).
+- **Scratch / output dirs:** use `/tmp` (or a workspace subfolder).
+
 # Tools + Contract
 - Use python library `artifact_tool` workbook APIs only for workbook edits only with PYTHON TOOL.
 - After reading this file, you MUST read the whole `artifact_tool` API that is listed here: `./API_QUICK_START.md`
 - Do not use `openpyxl`, `pandas`, or alternate spreadsheet libraries.
-- Read inputs from `/mnt/data`; write outputs to `/mnt/data`.
+- Read inputs from `/tmp`; write outputs to `/tmp`.
 - Export final workbook as `.xlsx` unless user asks otherwise.
 
 ## Required Imports + Startup
@@ -27,7 +33,7 @@ Assume `artifact_tool` exists and is installed. Do not run environment/package d
 Import existing workbook only when needed (user-uploaded/edit-in-place or intentional reload):
 ```python
 from artifact_tool import Blob, SpreadsheetFile
-wb = SpreadsheetFile.import_xlsx(Blob.load("/mnt/data/input.xlsx"))
+wb = SpreadsheetFile.import_xlsx(Blob.load("/tmp/input.xlsx"))
 ```
 
 Create new workbook:
@@ -110,7 +116,7 @@ Speed matters, but output quality must meet baseline.
 Complete only when:
 - Workbook content is populated and formulas compute.
 - No obvious formula errors in key scanned ranges (no bad refs/off-by-one/circular errors).
-- `.xlsx` saved to `/mnt/data`.
+- `.xlsx` saved to `/tmp`.
 - Layout is organized, legible, and aligned to request style (or default formatting baseline).
 - Final response includes output path + short summary of sheets/ranges created. Do not include rendered preview unless requested.
 
@@ -155,7 +161,7 @@ If render is last line in Python call, image can be shown directly.
 
 5. Export:
 ```python
-SpreadsheetFile.export_xlsx(wb).save("/mnt/data/output.xlsx")
+SpreadsheetFile.export_xlsx(wb).save("/tmp/output.xlsx")
 ```
 
 6. Finalize immediately after successful export + compact verification.

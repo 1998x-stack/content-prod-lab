@@ -19,7 +19,7 @@ This bundle provides:
 
 ## 1) Lint
 ```bash
-python scripts/style_lint.py input.docx --json /mnt/data/style_report.json
+python scripts/style_lint.py input.docx --json /tmp/style_report.json
 ```
 What to look for:
 - Lots of `run_direct_formatting`: common cause of “why is this one different”.
@@ -54,7 +54,7 @@ python scripts/style_normalize.py input.docx out_normalized.docx --enforce_headi
 
 ## Visual QA gate
 ```bash
-python render_docx.py out_normalized.docx --output_dir /mnt/data/out_norm
+python render_docx.py out_normalized.docx --output_dir /tmp/out_norm
 ```
 Success criteria:
 - No clipped/overlapping text

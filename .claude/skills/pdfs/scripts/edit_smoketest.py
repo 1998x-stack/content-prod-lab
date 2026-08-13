@@ -6,7 +6,7 @@ Why:
   This test ensures pdf_edit.py paginate runs end-to-end and produces a valid PDF.
 
 Run:
-  python edit_smoketest.py --workdir /mnt/data/_pdf_edit_smoke
+  python edit_smoketest.py --workdir /tmp/_pdf_edit_smoke
 """
 
 from __future__ import annotations
@@ -31,7 +31,7 @@ def _make_two_page_pdf(path: Path) -> None:
 
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--workdir", default="/mnt/data/_pdf_edit_smoke")
+    p.add_argument("--workdir", default="/tmp/_pdf_edit_smoke")
     p.add_argument("--dpi", type=int, default=150)
     args = p.parse_args()
 

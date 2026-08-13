@@ -9,14 +9,14 @@ Use this when:
 ## Golden path
 
 ```bash
-python /home/oai/skills/pdfs/scripts/compare_renders.py before.pdf after.pdf \
-  --out_dir /mnt/data/_diff \
+python scripts/compare_renders.py before.pdf after.pdf \
+  --out_dir /tmp/_diff \
   --dpi 200 --engine pdfium
 ```
 
 Outputs:
-- `/mnt/data/_diff/summary.json`
-- `/mnt/data/_diff/diff/page-<N>.png` for changed pages
+- `/tmp/_diff/summary.json`
+- `/tmp/_diff/diff/page-<N>.png` for changed pages
 
 Success criteria:
 - if you expect a small change (e.g., watermark), only those pages should diff
@@ -25,6 +25,6 @@ Success criteria:
 Tip: if you want a human skim, generate montages:
 
 ```bash
-python /home/oai/skills/pdfs/scripts/create_montage.py /mnt/data/_diff/render_a --out /mnt/data/_diff/a_montage.png
-python /home/oai/skills/pdfs/scripts/create_montage.py /mnt/data/_diff/render_b --out /mnt/data/_diff/b_montage.png
+python scripts/create_montage.py /tmp/_diff/render_a --out /tmp/_diff/a_montage.png
+python scripts/create_montage.py /tmp/_diff/render_b --out /tmp/_diff/b_montage.png
 ```

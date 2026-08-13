@@ -28,7 +28,7 @@ If you must adjust typography, do it by editing the style definitions (template)
 
 ## Validate structure quickly
 ```bash
-python scripts/heading_audit.py /mnt/data/input.docx
+python scripts/heading_audit.py /tmp/input.docx
 ```
 
 ## Render → PNG review checklist (headings)

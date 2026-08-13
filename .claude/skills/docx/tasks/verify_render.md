@@ -7,21 +7,21 @@ DOCX editing tools can "succeed" while the visual output is broken. Always verif
 This uses a dedicated LibreOffice profile + writable HOME and produces `page-<N>.png` images:
 
 ```bash
-python render_docx.py /mnt/data/input.docx --output_dir /mnt/data/out
+python render_docx.py /tmp/input.docx --output_dir /tmp/out
 # For debugging LibreOffice failures:
-python render_docx.py /mnt/data/input.docx --output_dir /mnt/data/out --verbose
+python render_docx.py /tmp/input.docx --output_dir /tmp/out --verbose
 # Optional: also write <input_stem>.pdf to --output_dir (for debugging/archival):
-python render_docx.py /mnt/data/input.docx --output_dir /mnt/data/out --emit_pdf
+python render_docx.py /tmp/input.docx --output_dir /tmp/out --emit_pdf
 ```
 
 ## Manual render command (if you need it)
 Use a unique LibreOffice profile (permission/locking issues are common in containers):
 
 ```bash
-OUTDIR=/mnt/data/out
-INPUT=/mnt/data/input.docx
+OUTDIR=/tmp/out
+INPUT=/tmp/input.docx
 BASENAME=$(basename "$INPUT" .docx)
-LO_PROFILE=/mnt/data/.lo_profile_${BASENAME}_$$
+LO_PROFILE=/tmp/.lo_profile_${BASENAME}_$$
 mkdir -p "$OUTDIR" "$LO_PROFILE"
 
 HOME="$LO_PROFILE" soffice --headless -env:UserInstallation=file://"$LO_PROFILE" \
@@ -51,4 +51,4 @@ pdftoppm -png "$OUTDIR/$BASENAME.pdf" "$OUTDIR/$BASENAME"
 ## Delivery checklist
 - Final DOCX is clean (no internal citation tokens, no placeholder text)
 - Final render looks correct on all pages
-- `/mnt/data` contains only final outputs (unless user asked for intermediates)
+- `/tmp` contains only final outputs (unless user asked for intermediates)
