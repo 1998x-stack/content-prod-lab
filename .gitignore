@@ -13,3 +13,6 @@ __pycache__/
 .ralph/
 .workbuddy-ai/
 .agent-sessions/
+
+# backup dirs
+reports/.backup/
