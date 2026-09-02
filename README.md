@@ -108,6 +108,24 @@ research/
 
 ---
 
+## 🌐 GitHub Pages 档案站
+
+仓库附带一个把全库文献编为可浏览/可下载站的静态站点：
+
+```
+site/
+├── index.html          总览页（8 大专题聚合）
+├── detail.html?p=<路径> 明细页（专题内逐条，可打开真实 PDF/DOCX/PPTX/XLSX）
+├── assets/             CSS / JS / data.json（自动生成）
+└── _build.py            从仓库扫描重建 data.json
+```
+
+- 首页在 `site/index.html`，仓库根 `index.html` 自动跳转过去；每条文献的「打开」链接指向仓库内真实文件。
+- 重新编目：`python3 site/_build.py`。
+- 部署：**Settings → Pages → Deploy from a branch → main → 目录 `/`（根）**。必须从根发布，否则正文内的 PDF 链接无法打开。详见 `site/README.md`。
+
+---
+
 ## ⚠️ 质量门：REQUIRED `render_docx.py`
 
 **任何 `.docx` 交付物都必须渲染成逐页图片并人工核验**，才能交付：
