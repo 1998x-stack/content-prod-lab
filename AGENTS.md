@@ -1,7 +1,7 @@
 # PROJECT KNOWLEDGE BASE
 
-**Generated:** 2026-08-13
-**Commit:** dd27ee0
+**Generated:** 2026-09-02
+**Commit:** a262227
 **Branch:** main
 
 ## OVERVIEW
@@ -13,7 +13,7 @@ content-prod-lab/
 ├── CLAUDE.md        # authoritative project guide — read FIRST, this file complements it
 ├── README.md        # user-facing overview
 ├── .claude/
-│   ├── settings*.json    # note: TWO files, setting.local.json (authoritative) vs settings.local.json (likely stale)
+│   ├── settings*.json    # note: TWO files — settings.local.json (authoritative) vs settings.json (repo default)
 │   └── skills/           # 8 skill packages — see .claude/skills/AGENTS.md
 ├── docs/gotchas.md  # append-run gotchas journal — check when hitting env/workflow problems
 ├── dayouyuan/       # 公众号文章 → 短视频 流水线 (prompts/ + articles/YYYYMMDD/ deliverables)
@@ -44,6 +44,10 @@ content-prod-lab/
 | OpenCode docs/decks/proposals | `opencode/` (cookbook/ 教程/ 汇报/ 方案/ 深度研究) |
 | Long-form article series | `series/<系列名>/` (e.g. `series/钢斧之后/`) |
 | City/gov annual-report deep dives | `reports/` |
+| Research reports (by discipline) | `research/<学科>/` (AI与训练/LLM底层/宏观政策与经济/市场情报/工程与源码/教育升学/历史与军事/个人成长) |
+| Fund / equity research + data pipeline | `stock-fund/` (run_fund_pipeline.py, web_enrich_fund.py) |
+| Travel guides (city weekend trips) | `出行攻略/` (南京/宁波/扬州/东京 …) |
+| Economics lecture notes + decks | `课程教学/<学科>/` (宏观/微观/货币金融学) |
 | Tech/product proposals | `proposals/` |
 | Gotchas / environment issues | `docs/gotchas.md` |
 
