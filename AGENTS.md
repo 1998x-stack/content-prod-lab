@@ -22,6 +22,10 @@ content-prod-lab/
 ├── opencode/        # OpenCode/Claude Code deliverables: cookbook/, 教程/, 汇报/, 方案/, 深度研究/
 ├── series/          # 系列长文 (每系列一子目录: 钢斧之后/ — 命名 系列名_第X章_标题)
 ├── reports/         # 城市/机构年度报告深度研究 (命名 城市_年份政府工作报告_深度研究_日期)
+├── research/        # 深度研究交付物，按学科分子目录（AI与训练/LLM底层/历史与军事/宏观政策与经济/工程与源码/市场情报/教育升学/个人成长）
+├── stock-fund/      # 权益基金/股票研究 + 数据管线（run_fund_pipeline 等）
+├── 出行攻略/          # 旅游两日游/深度旅行攻略（南京/宁波/扬州/东京）
+├── 课程教学/          # 经济学讲义+课件（宏观经济学/微观经济学/货币金融学）
 ├── proposals/       # 技术/产品方案 (命名 主题_方案名_v版本)
 └── .omo/            # agent runtime state — never touch
 ```

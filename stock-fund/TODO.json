@@ -1,0 +1,101 @@
+{
+  "project": "stock-fund/全市场基金调研追溯",
+  "branchName": "ralph/all-funds-investigation",
+  "description": "按郑希观点库 (zhengxi-views) 的收集与分析流程，逐基金处理 all_funds/fund_list.json(约 27037 只) 的全部记录，生成信息充分、schema 完善的记录，以 append 方式沉淀进 .workbuddy-ai/research_log.jsonl；支持断点续跑、批量并行、never stop。",
+  "workflow": {
+    "input": ".workbuddy-ai/skills/zhengxi-views/references/all_funds/fund_list.json",
+    "output": ".workbuddy-ai/research_log.jsonl (append JSONL)",
+    "progress_state": ".workbuddy-ai/pipeline_state.json",
+    "record_schema": {
+      "id": "R000001 (自增)",
+      "ts": "ISO8601",
+      "type": "fund_investigation",
+      "fund": {"code","name","manager","type","nav_area","nav","cum_nav","nav_date","scale","scale_date"},
+      "top_holdings": [{"code","name","pct"}],
+      "holdings_date": "…",
+      "concentration_pct": "前十大合计≈x%",
+      "fund_level": {"is_zhengxi":bool,"zx_role":'"在任/曾任/null"',"zx_tenure":"…"},
+      "framework": {"zhengxi_fit_note","estimated_6dim_score_range","is_zhengxi_quote","disclaimer"},
+      "data_sources": [],
+      "notes": ""
+    },
+    "advance": "读取 fund_list.json → 取未处理 code → 构造记录：郑希8只走本地快照+在线嵌入；其余以 name/type 等离线元数据(+可访问时在线持仓/净值) → 一行 JSON append → 更新进度 → 批次循环"
+  },
+  "userStories": [
+    {
+      "id": "US-001",
+      "title": "建立 TODO.json 与运行器骨架",
+      "description": "As an operator, I want a valid TODO.json(ralph 格式) + run_fund_pipeline 运行器在 stock-fund 项目根就绪，so that 后续可迭代执行并产出记录。",
+      "acceptanceCriteria": [
+        "project 根存在 TODO.json",
+        "存在可运行的采集/处理运行器脚本",
+        "运行器能读 fund_list.json",
+        "脚本可被 python3 运行",
+        "Typecheck passes"
+      ],
+      "priority": 1,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-002",
+      "title": "初始化研究日志与进度状态",
+      "description": "As an agent, I want append-only research_log.jsonl + 断点续跑用 progress 文件（含 done/skip 集合），以便 never stop 且可重入。",
+      "acceptanceCriteria": [
+        "research_log.jsonl 若不存在则创建",
+        "progress 文件可记录已处理 code",
+        "追加不覆盖（append-only）",
+        "重复处理可跳过（去重）",
+        "Typecheck passes"
+      ],
+      "priority": 2,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-003",
+      "title": "逐基金离线处理元数据路径",
+      "description": "As an agent，我想让流水线对每条基金记录用 fund_list 的 code/name/type/abbr/pinyin 生成完整、信息充分的 JSONL 记录（含 framework 推演），避免浪费元数据。",
+      "acceptanceCriteria": [
+        "每条 fund 生成符合 record_schema 的记录",
+        "保留 code/name/type/abbr/pinyin 到 notes 或字段",
+        "生成 framework 评估与 disclaimer",
+        "未联网可完成（offline-first）",
+        "Typecheck passes"
+      ],
+      "priority": 3,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-004",
+      "title": "郑希基金走本地精编快照",
+      "description": "As an agent，我想对郑 Zheng 本人 8 只基金直接用本地快照（references/fund_data/*）填充 top_holdings/净值/规模等，信息更充分、不走网络。",
+      "acceptanceCriteria": [
+        "识别 8 只在任/曾任郑 Zheng 基金",
+        "从本地快照读取 top_holdings 与净值/规模",
+        "注记 is_zhengxi_quote",
+        "离线可用",
+        "Typecheck passes"
+      ],
+      "priority": 4,
+      "passes": false,
+      "notes": ""
+    },
+    {
+      "id": "US-005",
+      "title": "在线抓取兜底（fetch_any_fund 封装）",
+      "description": "As an agent，我想在每日每日所有联接可达时增强任意基金真实数据；当接口被阻塞时自动降级离线，不影响 never-stop。",
+      "acceptanceCriteria": [
+        "尝试在线抓取持仓/净值",
+        "失败时捕获异常并记录降级",
+        "不因网络失败中断整体循环",
+        "保持 append 不丢已处理",
+        "Typecheck passes"
+      ],
+      "priority": 5,
+      "passes": false,
+      "notes": ""
+    }
+  ]
+}

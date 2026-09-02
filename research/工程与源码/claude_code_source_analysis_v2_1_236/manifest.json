@@ -1,0 +1,56 @@
+{
+  "baseline": "Claude Code v2.1.236",
+  "as_of": "2026-08-19",
+  "files": [
+    {
+      "file": "00_Claude_Code_源码研究总纲_v2.1.236.pdf",
+      "pages": 6,
+      "bytes": 142982
+    },
+    {
+      "file": "01_启动_CLI运行时与表层架构.pdf",
+      "pages": 6,
+      "bytes": 140277
+    },
+    {
+      "file": "02_Agent_Loop_API与流式执行.pdf",
+      "pages": 6,
+      "bytes": 135600
+    },
+    {
+      "file": "03_上下文_提示词_记忆_压缩与缓存.pdf",
+      "pages": 7,
+      "bytes": 154643
+    },
+    {
+      "file": "04_工具系统_执行编排与Checkpoint.pdf",
+      "pages": 6,
+      "bytes": 140175
+    },
+    {
+      "file": "05_权限_沙箱与安全架构.pdf",
+      "pages": 7,
+      "bytes": 142571
+    },
+    {
+      "file": "06_子Agent_AgentTeams_后台会话与通信.pdf",
+      "pages": 7,
+      "bytes": 140430
+    },
+    {
+      "file": "07_Skills_Hooks_MCP_Plugins与LSP.pdf",
+      "pages": 7,
+      "bytes": 141814
+    },
+    {
+      "file": "08_会话_JSONL_恢复_回滚与Remote_Control.pdf",
+      "pages": 7,
+      "bytes": 140316
+    },
+    {
+      "file": "09_Python_Agent_SDK源码逐模块教程.pdf",
+      "pages": 8,
+      "bytes": 146216
+    }
+  ]
+}
