@@ -1,0 +1,2850 @@
+{
+ "title": "Content Production Lab · 中文内容生产档案",
+ "total": 376,
+ "divisions": [
+  {
+   "name": "研究档案",
+   "key": "research",
+   "blurb": "按学科主题归档的深度研究报告库：AI 前沿与训练、LLM 底层原理、宏观政策与经济、市场情报、工程与源码、教育与升学、历史与军事、个人成长。",
+   "folders": [
+    {
+     "name": "AI与训练",
+     "path": "research/AI与训练",
+     "count": 17,
+     "files": [
+      {
+       "rel": "research/AI与训练/2026-08_Agent_Training_GitHub_Papers_Report_CN.pdf",
+       "name": "2026-08_Agent_Training_GitHub_Papers_Report_CN",
+       "ext": "pdf",
+       "size": 232294,
+       "date": "2026-08-17"
+      },
+      {
+       "rel": "research/AI与训练/Agent_Research_PDF_Series_2025-08_to_2026-08/01_Agent年度研究总论_2025-08至2026-08.pdf",
+       "name": "01_Agent年度研究总论_2025-08至2026-08",
+       "ext": "pdf",
+       "size": 173914,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/AI与训练/Agent_Research_PDF_Series_2025-08_to_2026-08/02_Agent架构_上下文_规划与工具.pdf",
+       "name": "02_Agent架构_上下文_规划与工具",
+       "ext": "pdf",
+       "size": 158004,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/AI与训练/Agent_Research_PDF_Series_2025-08_to_2026-08/03_Agent记忆_技能与自进化.pdf",
+       "name": "03_Agent记忆_技能与自进化",
+       "ext": "pdf",
+       "size": 164153,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/AI与训练/Agent_Research_PDF_Series_2025-08_to_2026-08/04_多智能体协作_通信与协议.pdf",
+       "name": "04_多智能体协作_通信与协议",
+       "ext": "pdf",
+       "size": 155124,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/AI与训练/Agent_Research_PDF_Series_2025-08_to_2026-08/05_Agent评测_可靠性与安全.pdf",
+       "name": "05_Agent评测_可靠性与安全",
+       "ext": "pdf",
+       "size": 183681,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/AI与训练/Agent_Research_PDF_Series_2025-08_to_2026-08/06_Coding_Web_ComputerUse与行业Agent.pdf",
+       "name": "06_Coding_Web_ComputerUse与行业Agent",
+       "ext": "pdf",
+       "size": 175024,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/AI与训练/Agent_Research_PDF_Series_2025-08_to_2026-08/07_开源Agent仓库与工程图谱.pdf",
+       "name": "07_开源Agent仓库与工程图谱",
+       "ext": "pdf",
+       "size": 170400,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/AI与训练/Agent_Research_PDF_Series_2025-08_to_2026-08/08_年度语料索引_方法与参考文献.pdf",
+       "name": "08_年度语料索引_方法与参考文献",
+       "ext": "pdf",
+       "size": 213076,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/AI与训练/DeepSeek_Harness_vs_OpenCode_综合比较分析报告.pdf",
+       "name": "DeepSeek_Harness_vs_OpenCode_综合比较分析报告",
+       "ext": "pdf",
+       "size": 1293629,
+       "date": "2026-08-18"
+      },
+      {
+       "rel": "research/AI与训练/DeepSeek_Harness_深度调查与企业内部AI集成借鉴报告.pdf",
+       "name": "DeepSeek_Harness_深度调查与企业内部AI集成借鉴报告",
+       "ext": "pdf",
+       "size": 907081,
+       "date": "2026-08-17"
+      },
+      {
+       "rel": "research/AI与训练/DeepSeek_V4_Harness_Executive_Analysis_20260820.pdf",
+       "name": "DeepSeek_V4_Harness_Executive_Analysis_20260820",
+       "ext": "pdf",
+       "size": 902925,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/AI与训练/Kernel_Reasoning_RL_深度调研与训练方案_2026-08-16.pdf",
+       "name": "Kernel_Reasoning_RL_深度调研与训练方案_2026-08-16",
+       "ext": "pdf",
+       "size": 648864,
+       "date": "2026-08-17"
+      },
+      {
+       "rel": "research/AI与训练/OpenAI_o1_o3_训练路线深度调查_2026-08-16.pdf",
+       "name": "OpenAI_o1_o3_训练路线深度调查_2026-08-16",
+       "ext": "pdf",
+       "size": 771446,
+       "date": "2026-08-17"
+      },
+      {
+       "rel": "research/AI与训练/OpenCode_to_DeepSeek_Harness_迁移计划与工程实施指南.pdf",
+       "name": "OpenCode_to_DeepSeek_Harness_迁移计划与工程实施指南",
+       "ext": "pdf",
+       "size": 1334715,
+       "date": "2026-08-18"
+      },
+      {
+       "rel": "research/AI与训练/Tech_Paper_Intelligence_2026-08-20_1015.docx",
+       "name": "Tech_Paper_Intelligence_2026-08-20_1015",
+       "ext": "docx",
+       "size": 54025,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/AI与训练/Tech_Paper_Intelligence_2026-08-20_1015.pdf",
+       "name": "Tech_Paper_Intelligence_2026-08-20_1015",
+       "ext": "pdf",
+       "size": 556370,
+       "date": "2026-08-20"
+      }
+     ]
+    },
+    {
+     "name": "LLM底层技术",
+     "path": "research/LLM底层技术",
+     "count": 19,
+     "files": [
+      {
+       "rel": "research/LLM底层技术/01_苏剑林研究思想与时间线.pdf",
+       "name": "01_苏剑林研究思想与时间线",
+       "ext": "pdf",
+       "size": 211506,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/LLM底层技术/02_RoPE从第一性原理完整推导.pdf",
+       "name": "02_RoPE从第一性原理完整推导",
+       "ext": "pdf",
+       "size": 192983,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/LLM底层技术/03_RoPE到NTK_ReRoPE_长度外推.pdf",
+       "name": "03_RoPE到NTK_ReRoPE_长度外推",
+       "ext": "pdf",
+       "size": 205482,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/LLM底层技术/04_GlobalPointer_ZLPR_多标签统一理论.pdf",
+       "name": "04_GlobalPointer_ZLPR_多标签统一理论",
+       "ext": "pdf",
+       "size": 201460,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/LLM底层技术/05_CasRel与信息抽取Formulation.pdf",
+       "name": "05_CasRel与信息抽取Formulation",
+       "ext": "pdf",
+       "size": 168172,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/LLM底层技术/06_BERT_Whitening_SimBERT_句向量.pdf",
+       "name": "06_BERT_Whitening_SimBERT_句向量",
+       "ext": "pdf",
+       "size": 182425,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/LLM底层技术/07_GAN_QP_VAE_Flow_早期生成模型.pdf",
+       "name": "07_GAN_QP_VAE_Flow_早期生成模型",
+       "ext": "pdf",
+       "size": 183994,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/LLM底层技术/08_Transformer初始化归一化与训练稳定性.pdf",
+       "name": "08_Transformer初始化归一化与训练稳定性",
+       "ext": "pdf",
+       "size": 183744,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/LLM底层技术/09_Adam_Lion_Muon_Moonlight_MuonClip.pdf",
+       "name": "09_Adam_Lion_Muon_Moonlight_MuonClip",
+       "ext": "pdf",
+       "size": 194353,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/LLM底层技术/10_MHA_MQA_GQA_MLA.pdf",
+       "name": "10_MHA_MQA_GQA_MLA",
+       "ext": "pdf",
+       "size": 172331,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/LLM底层技术/11_LinearAttention_DeltaNet_KDA_KimiLinear.pdf",
+       "name": "11_LinearAttention_DeltaNet_KDA_KimiLinear",
+       "ext": "pdf",
+       "size": 179344,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/LLM底层技术/12_MoE_KimiK2_大规模预训练稳定性.pdf",
+       "name": "12_MoE_KimiK2_大规模预训练稳定性",
+       "ext": "pdf",
+       "size": 178179,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/LLM底层技术/13_RL_Scaling_Kimi_k1_5.pdf",
+       "name": "13_RL_Scaling_Kimi_k1_5",
+       "ext": "pdf",
+       "size": 174584,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/LLM底层技术/14_苏剑林常用数学工具箱.pdf",
+       "name": "14_苏剑林常用数学工具箱",
+       "ext": "pdf",
+       "size": 186033,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/LLM底层技术/15_苏剑林研究方法论_从工程问题产生新算法.pdf",
+       "name": "15_苏剑林研究方法论_从工程问题产生新算法",
+       "ext": "pdf",
+       "size": 208769,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/LLM底层技术/BERT家族模型与工业场景选型研究_2026.pdf",
+       "name": "BERT家族模型与工业场景选型研究_2026",
+       "ext": "pdf",
+       "size": 578189,
+       "date": "2026-08-17"
+      },
+      {
+       "rel": "research/LLM底层技术/LM_Head_Unembedding_Softmax_深度分析_2026.pdf",
+       "name": "LM_Head_Unembedding_Softmax_深度分析_2026",
+       "ext": "pdf",
+       "size": 1185269,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/LLM底层技术/Transformer_面试宝典_2026.pdf",
+       "name": "Transformer_面试宝典_2026",
+       "ext": "pdf",
+       "size": 1530926,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/LLM底层技术/模型蒸馏核心Gotchas_工程实践手册.pdf",
+       "name": "模型蒸馏核心Gotchas_工程实践手册",
+       "ext": "pdf",
+       "size": 544885,
+       "date": "2026-08-17"
+      }
+     ]
+    },
+    {
+     "name": "宏观政策与经济",
+     "path": "research/宏观政策与经济",
+     "count": 18,
+     "files": [
+      {
+       "rel": "research/宏观政策与经济/01_朱镕基改革的双重遗产_Reuters_Breakingviews_中文深度摘要.docx",
+       "name": "01_朱镕基改革的双重遗产_Reuters_Breakingviews_中文深度摘要",
+       "ext": "docx",
+       "size": 85338,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/宏观政策与经济/02_中国房地产重置的高昂代价_Reuters_Breakingviews_中文深度摘要.docx",
+       "name": "02_中国房地产重置的高昂代价_Reuters_Breakingviews_中文深度摘要",
+       "ext": "docx",
+       "size": 98001,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/宏观政策与经济/03_中国地方债清理留下增长难题_Reuters_Breakingviews_中文深度摘要.docx",
+       "name": "03_中国地方债清理留下增长难题_Reuters_Breakingviews_中文深度摘要",
+       "ext": "docx",
+       "size": 78827,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/宏观政策与经济/04_中国非计划性顺差与欧盟两难_Reuters_Breakingviews_中文深度摘要.docx",
+       "name": "04_中国非计划性顺差与欧盟两难_Reuters_Breakingviews_中文深度摘要",
+       "ext": "docx",
+       "size": 83381,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/宏观政策与经济/05_Reuters_Breakingviews_中国Top10结构性分析_2025-2026.pdf",
+       "name": "05_Reuters_Breakingviews_中国Top10结构性分析_2025-2026",
+       "ext": "pdf",
+       "size": 941366,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/宏观政策与经济/上海16区_30产业链_产业作战报告_2026.pdf",
+       "name": "上海16区_30产业链_产业作战报告_2026",
+       "ext": "pdf",
+       "size": 2429217,
+       "date": "2026-08-25"
+      },
+      {
+       "rel": "research/宏观政策与经济/中国人口灰犀牛_人口学深度分析_2026.pdf",
+       "name": "中国人口灰犀牛_人口学深度分析_2026",
+       "ext": "pdf",
+       "size": 1373613,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/宏观政策与经济/中国人口趋势下20-30岁年轻人的战略选择_深度研究报告_2026.pdf",
+       "name": "中国人口趋势下20-30岁年轻人的战略选择_深度研究报告_2026",
+       "ext": "pdf",
+       "size": 1848802,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/宏观政策与经济/中国公务员近30年工资调整史_1997-2024_详细报告.pdf",
+       "name": "中国公务员近30年工资调整史_1997-2024_详细报告",
+       "ext": "pdf",
+       "size": 935286,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/宏观政策与经济/中国养老金支持比_人口就业退休制度联合模型_2025-2070.docx",
+       "name": "中国养老金支持比_人口就业退休制度联合模型_2025-2070",
+       "ext": "docx",
+       "size": 753351,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/宏观政策与经济/中国核心政策与摩根士丹利框架_2025-2026_专业研究报告.pdf",
+       "name": "中国核心政策与摩根士丹利框架_2025-2026_专业研究报告",
+       "ext": "pdf",
+       "size": 1345210,
+       "date": "2026-08-25"
+      },
+      {
+       "rel": "research/宏观政策与经济/分税制改革_多视角三十年复盘_2026.pdf",
+       "name": "分税制改革_多视角三十年复盘_2026",
+       "ext": "pdf",
+       "size": 1259980,
+       "date": "2026-08-17"
+      },
+      {
+       "rel": "research/宏观政策与经济/南昌50岁左右农村居民养老保险_档位数学建模与可视化方案_2026.docx",
+       "name": "南昌50岁左右农村居民养老保险_档位数学建模与可视化方案_2026",
+       "ext": "docx",
+       "size": 586923,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/宏观政策与经济/南昌50岁左右农村居民养老保险方案_男女分案_2026.pdf",
+       "name": "南昌50岁左右农村居民养老保险方案_男女分案_2026",
+       "ext": "pdf",
+       "size": 1000691,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/宏观政策与经济/外国人在中国超国民待遇_历史机制与制度治理_深度报告.pdf",
+       "name": "外国人在中国超国民待遇_历史机制与制度治理_深度报告",
+       "ext": "pdf",
+       "size": 1267225,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/宏观政策与经济/天涯KK预测_交叉验证研究报告_2026-08-24.pdf",
+       "name": "天涯KK预测_交叉验证研究报告_2026-08-24",
+       "ext": "pdf",
+       "size": 821387,
+       "date": "2026-08-24"
+      },
+      {
+       "rel": "research/宏观政策与经济/江西73县县域经济体检表_2020-2025_V1.xlsx",
+       "name": "江西73县县域经济体检表_2020-2025_V1",
+       "ext": "xlsx",
+       "size": 78274,
+       "date": "2026-08-25"
+      },
+      {
+       "rel": "research/宏观政策与经济/湖南怎么办与合肥模式_深度分析报告.pdf",
+       "name": "湖南怎么办与合肥模式_深度分析报告",
+       "ext": "pdf",
+       "size": 1156777,
+       "date": "2026-08-20"
+      }
+     ]
+    },
+    {
+     "name": "市场情报",
+     "path": "research/市场情报",
+     "count": 7,
+     "files": [
+      {
+       "rel": "research/市场情报/China_Media_Intelligence_2026-08-20_MANUAL.docx",
+       "name": "China_Media_Intelligence_2026-08-20_MANUAL",
+       "ext": "docx",
+       "size": 902106,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/市场情报/China_Media_Intelligence_2026-08-20_MANUAL.pdf",
+       "name": "China_Media_Intelligence_2026-08-20_MANUAL",
+       "ext": "pdf",
+       "size": 1378401,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/市场情报/China_Media_Intelligence_2026-08-20_MANUAL.pptx",
+       "name": "China_Media_Intelligence_2026-08-20_MANUAL",
+       "ext": "pptx",
+       "size": 1647350,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/市场情报/Market_Intelligence_2026-08-20_1000.docx",
+       "name": "Market_Intelligence_2026-08-20_1000",
+       "ext": "docx",
+       "size": 52439,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/市场情报/Market_Intelligence_2026-08-20_1000.pdf",
+       "name": "Market_Intelligence_2026-08-20_1000",
+       "ext": "pdf",
+       "size": 639496,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/市场情报/牛来_龙标申请深度调查报告.pdf",
+       "name": "牛来_龙标申请深度调查报告",
+       "ext": "pdf",
+       "size": 603717,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/市场情报/闲鱼挖宝与非标准化信息市场指南.pdf",
+       "name": "闲鱼挖宝与非标准化信息市场指南",
+       "ext": "pdf",
+       "size": 550257,
+       "date": "2026-08-21"
+      }
+     ]
+    },
+    {
+     "name": "教育升学",
+     "path": "research/教育升学",
+     "count": 21,
+     "files": [
+      {
+       "rel": "research/教育升学/2026上海16区中学名录与升学政策PDF系列/2026上海市嘉定区中学名录与小升初初升高政策研究.pdf",
+       "name": "2026上海市嘉定区中学名录与小升初初升高政策研究",
+       "ext": "pdf",
+       "size": 166477,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/2026上海16区中学名录与升学政策PDF系列/2026上海市奉贤区中学名录与小升初初升高政策研究.pdf",
+       "name": "2026上海市奉贤区中学名录与小升初初升高政策研究",
+       "ext": "pdf",
+       "size": 151285,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/2026上海16区中学名录与升学政策PDF系列/2026上海市宝山区中学名录与小升初初升高政策研究.pdf",
+       "name": "2026上海市宝山区中学名录与小升初初升高政策研究",
+       "ext": "pdf",
+       "size": 164023,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/2026上海16区中学名录与升学政策PDF系列/2026上海市崇明区中学名录与小升初初升高政策研究.pdf",
+       "name": "2026上海市崇明区中学名录与小升初初升高政策研究",
+       "ext": "pdf",
+       "size": 147179,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/2026上海16区中学名录与升学政策PDF系列/2026上海市徐汇区中学名录与小升初初升高政策研究.pdf",
+       "name": "2026上海市徐汇区中学名录与小升初初升高政策研究",
+       "ext": "pdf",
+       "size": 148433,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/2026上海16区中学名录与升学政策PDF系列/2026上海市普陀区中学名录与小升初初升高政策研究.pdf",
+       "name": "2026上海市普陀区中学名录与小升初初升高政策研究",
+       "ext": "pdf",
+       "size": 153009,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/2026上海16区中学名录与升学政策PDF系列/2026上海市杨浦区中学名录与小升初初升高政策研究.pdf",
+       "name": "2026上海市杨浦区中学名录与小升初初升高政策研究",
+       "ext": "pdf",
+       "size": 150035,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/2026上海16区中学名录与升学政策PDF系列/2026上海市松江区中学名录与小升初初升高政策研究.pdf",
+       "name": "2026上海市松江区中学名录与小升初初升高政策研究",
+       "ext": "pdf",
+       "size": 157523,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/2026上海16区中学名录与升学政策PDF系列/2026上海市浦东新区中学名录与小升初初升高政策研究.pdf",
+       "name": "2026上海市浦东新区中学名录与小升初初升高政策研究",
+       "ext": "pdf",
+       "size": 195173,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/2026上海16区中学名录与升学政策PDF系列/2026上海市虹口区中学名录与小升初初升高政策研究.pdf",
+       "name": "2026上海市虹口区中学名录与小升初初升高政策研究",
+       "ext": "pdf",
+       "size": 144377,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/2026上海16区中学名录与升学政策PDF系列/2026上海市金山区中学名录与小升初初升高政策研究.pdf",
+       "name": "2026上海市金山区中学名录与小升初初升高政策研究",
+       "ext": "pdf",
+       "size": 152560,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/2026上海16区中学名录与升学政策PDF系列/2026上海市长宁区中学名录与小升初初升高政策研究.pdf",
+       "name": "2026上海市长宁区中学名录与小升初初升高政策研究",
+       "ext": "pdf",
+       "size": 147731,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/2026上海16区中学名录与升学政策PDF系列/2026上海市闵行区中学名录与小升初初升高政策研究.pdf",
+       "name": "2026上海市闵行区中学名录与小升初初升高政策研究",
+       "ext": "pdf",
+       "size": 158155,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/2026上海16区中学名录与升学政策PDF系列/2026上海市青浦区中学名录与小升初初升高政策研究.pdf",
+       "name": "2026上海市青浦区中学名录与小升初初升高政策研究",
+       "ext": "pdf",
+       "size": 154378,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/2026上海16区中学名录与升学政策PDF系列/2026上海市静安区中学名录与小升初初升高政策研究.pdf",
+       "name": "2026上海市静安区中学名录与小升初初升高政策研究",
+       "ext": "pdf",
+       "size": 145654,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/2026上海16区中学名录与升学政策PDF系列/2026上海市黄浦区中学名录与小升初初升高政策研究.pdf",
+       "name": "2026上海市黄浦区中学名录与小升初初升高政策研究",
+       "ext": "pdf",
+       "size": 150252,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/丘成桐领军计划新考纲_分析研究报告.pdf",
+       "name": "丘成桐领军计划新考纲_分析研究报告",
+       "ext": "pdf",
+       "size": 1022268,
+       "date": "2026-08-21"
+      },
+      {
+       "rel": "research/教育升学/同济怎么办_同济长聘机制改革与上海交大对比研究.docx",
+       "name": "同济怎么办_同济长聘机制改革与上海交大对比研究",
+       "ext": "docx",
+       "size": 408206,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/同济怎么办_同济长聘机制改革与上海交大对比研究.pdf",
+       "name": "同济怎么办_同济长聘机制改革与上海交大对比研究",
+       "ext": "pdf",
+       "size": 1316293,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/港澳台华侨全国联招制度与难度研究_2026.pdf",
+       "name": "港澳台华侨全国联招制度与难度研究_2026",
+       "ext": "pdf",
+       "size": 1063479,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "research/教育升学/香港高才通与优才申请深度研究_2026.pdf",
+       "name": "香港高才通与优才申请深度研究_2026",
+       "ext": "pdf",
+       "size": 1125839,
+       "date": "2026-08-20"
+      }
+     ]
+    },
+    {
+     "name": "工程与源码",
+     "path": "research/工程与源码",
+     "count": 14,
+     "files": [
+      {
+       "rel": "research/工程与源码/CAN领域测试用例设计_日系项目风格_专业版.pdf",
+       "name": "CAN领域测试用例设计_日系项目风格_专业版",
+       "ext": "pdf",
+       "size": 652116,
+       "date": "2026-08-27"
+      },
+      {
+       "rel": "research/工程与源码/claude_code_source_analysis_v2_1_236/00_Claude_Code_源码研究总纲_v2.1.236.pdf",
+       "name": "00_Claude_Code_源码研究总纲_v2.1.236",
+       "ext": "pdf",
+       "size": 142982,
+       "date": "2026-08-19"
+      },
+      {
+       "rel": "research/工程与源码/claude_code_source_analysis_v2_1_236/01_启动_CLI运行时与表层架构.pdf",
+       "name": "01_启动_CLI运行时与表层架构",
+       "ext": "pdf",
+       "size": 140277,
+       "date": "2026-08-19"
+      },
+      {
+       "rel": "research/工程与源码/claude_code_source_analysis_v2_1_236/02_Agent_Loop_API与流式执行.pdf",
+       "name": "02_Agent_Loop_API与流式执行",
+       "ext": "pdf",
+       "size": 135600,
+       "date": "2026-08-19"
+      },
+      {
+       "rel": "research/工程与源码/claude_code_source_analysis_v2_1_236/03_上下文_提示词_记忆_压缩与缓存.pdf",
+       "name": "03_上下文_提示词_记忆_压缩与缓存",
+       "ext": "pdf",
+       "size": 154643,
+       "date": "2026-08-19"
+      },
+      {
+       "rel": "research/工程与源码/claude_code_source_analysis_v2_1_236/04_工具系统_执行编排与Checkpoint.pdf",
+       "name": "04_工具系统_执行编排与Checkpoint",
+       "ext": "pdf",
+       "size": 140175,
+       "date": "2026-08-19"
+      },
+      {
+       "rel": "research/工程与源码/claude_code_source_analysis_v2_1_236/05_权限_沙箱与安全架构.pdf",
+       "name": "05_权限_沙箱与安全架构",
+       "ext": "pdf",
+       "size": 142571,
+       "date": "2026-08-19"
+      },
+      {
+       "rel": "research/工程与源码/claude_code_source_analysis_v2_1_236/06_子Agent_AgentTeams_后台会话与通信.pdf",
+       "name": "06_子Agent_AgentTeams_后台会话与通信",
+       "ext": "pdf",
+       "size": 140430,
+       "date": "2026-08-19"
+      },
+      {
+       "rel": "research/工程与源码/claude_code_source_analysis_v2_1_236/07_Skills_Hooks_MCP_Plugins与LSP.pdf",
+       "name": "07_Skills_Hooks_MCP_Plugins与LSP",
+       "ext": "pdf",
+       "size": 141814,
+       "date": "2026-08-19"
+      },
+      {
+       "rel": "research/工程与源码/claude_code_source_analysis_v2_1_236/08_会话_JSONL_恢复_回滚与Remote_Control.pdf",
+       "name": "08_会话_JSONL_恢复_回滚与Remote_Control",
+       "ext": "pdf",
+       "size": 140316,
+       "date": "2026-08-19"
+      },
+      {
+       "rel": "research/工程与源码/claude_code_source_analysis_v2_1_236/09_Python_Agent_SDK源码逐模块教程.pdf",
+       "name": "09_Python_Agent_SDK源码逐模块教程",
+       "ext": "pdf",
+       "size": 146216,
+       "date": "2026-08-19"
+      },
+      {
+       "rel": "research/工程与源码/Cordis_fiber_ts_709行源码深度分析.pdf",
+       "name": "Cordis_fiber_ts_709行源码深度分析",
+       "ext": "pdf",
+       "size": 1520410,
+       "date": "2026-08-19"
+      },
+      {
+       "rel": "research/工程与源码/MinIO核心教程与底层逻辑_2026.pdf",
+       "name": "MinIO核心教程与底层逻辑_2026",
+       "ext": "pdf",
+       "size": 817146,
+       "date": "2026-08-17"
+      },
+      {
+       "rel": "research/工程与源码/openpipe_art_deep_dive_tutorial_cn.pdf",
+       "name": "openpipe_art_deep_dive_tutorial_cn",
+       "ext": "pdf",
+       "size": 669210,
+       "date": "2026-08-17"
+      }
+     ]
+    },
+    {
+     "name": "历史与军事",
+     "path": "research/历史与军事",
+     "count": 4,
+     "files": [
+      {
+       "rel": "research/历史与军事/反劣币制度设计_从机制到治理.pdf",
+       "name": "反劣币制度设计_从机制到治理",
+       "ext": "pdf",
+       "size": 983192,
+       "date": "2026-08-18"
+      },
+      {
+       "rel": "research/历史与军事/柏林危机_调查研究报告.docx",
+       "name": "柏林危机_调查研究报告",
+       "ext": "docx",
+       "size": 81958,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/历史与军事/粟裕与豫东战役_分阶段多信源调查分析.docx",
+       "name": "粟裕与豫东战役_分阶段多信源调查分析",
+       "ext": "docx",
+       "size": 63509,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "research/历史与军事/粟裕与豫东战役_分阶段多信源调查分析.pdf",
+       "name": "粟裕与豫东战役_分阶段多信源调查分析",
+       "ext": "pdf",
+       "size": 743856,
+       "date": "2026-08-14"
+      }
+     ]
+    },
+    {
+     "name": "个人成长",
+     "path": "research/个人成长",
+     "count": 2,
+     "files": [
+      {
+       "rel": "research/个人成长/陈伟人生跃迁复盘_同济2015_Stanford2019_Nexa2023_Qualcomm2026.pdf",
+       "name": "陈伟人生跃迁复盘_同济2015_Stanford2019_Nexa2023_Qualcomm2026",
+       "ext": "pdf",
+       "size": 760396,
+       "date": "2026-08-28"
+      },
+      {
+       "rel": "research/个人成长/高精力系统_深度研究报告_2026-08-25.pdf",
+       "name": "高精力系统_深度研究报告_2026-08-25",
+       "ext": "pdf",
+       "size": 992194,
+       "date": "2026-08-25"
+      }
+     ]
+    }
+   ],
+   "total": 102
+  },
+  {
+   "name": "课程教学",
+   "key": "courses",
+   "blurb": "经济学讲义与配套课件（PDF 讲义 + PPTX 课件），按学科组织：宏观、微观、货币金融。",
+   "folders": [
+    {
+     "name": "宏观经济学",
+     "path": "课程教学/宏观经济学",
+     "count": 4,
+     "files": [
+      {
+       "rel": "课程教学/宏观经济学/宏观经济学_1970年代美国滞胀与沃尔克冲击案例讲义.pdf",
+       "name": "宏观经济学_1970年代美国滞胀与沃尔克冲击案例讲义",
+       "ext": "pdf",
+       "size": 4969901,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "课程教学/宏观经济学/宏观经济学_1970年代美国滞胀与沃尔克冲击案例课件.pptx",
+       "name": "宏观经济学_1970年代美国滞胀与沃尔克冲击案例课件",
+       "ext": "pptx",
+       "size": 9390910,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "课程教学/宏观经济学/宏观经济学_2008金融危机与四万亿案例讲义.pdf",
+       "name": "宏观经济学_2008金融危机与四万亿案例讲义",
+       "ext": "pdf",
+       "size": 457463,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "课程教学/宏观经济学/宏观经济学_2008金融危机与四万亿案例课件.pptx",
+       "name": "宏观经济学_2008金融危机与四万亿案例课件",
+       "ext": "pptx",
+       "size": 470367,
+       "date": "2026-08-20"
+      }
+     ]
+    },
+    {
+     "name": "微观经济学",
+     "path": "课程教学/微观经济学",
+     "count": 3,
+     "files": [
+      {
+       "rel": "课程教学/微观经济学/微观经济学_口罩市场案例_课堂讲解.pptx",
+       "name": "微观经济学_口罩市场案例_课堂讲解",
+       "ext": "pptx",
+       "size": 1495007,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "课程教学/微观经济学/微观经济学_网约车动态定价案例_深度报告.pdf",
+       "name": "微观经济学_网约车动态定价案例_深度报告",
+       "ext": "pdf",
+       "size": 10945029,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "课程教学/微观经济学/微观经济学_网约车动态定价案例_课堂讲解.pptx",
+       "name": "微观经济学_网约车动态定价案例_课堂讲解",
+       "ext": "pptx",
+       "size": 9816728,
+       "date": "2026-08-20"
+      }
+     ]
+    },
+    {
+     "name": "货币金融学",
+     "path": "课程教学/货币金融学",
+     "count": 6,
+     "files": [
+      {
+       "rel": "课程教学/货币金融学/货币金融学核心案例-SVB与现代货币体系深度学习.docx",
+       "name": "货币金融学核心案例-SVB与现代货币体系深度学习",
+       "ext": "docx",
+       "size": 51569,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "课程教学/货币金融学/货币金融学核心案例-SVB与现代货币体系深度学习.pdf",
+       "name": "货币金融学核心案例-SVB与现代货币体系深度学习",
+       "ext": "pdf",
+       "size": 576952,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "课程教学/货币金融学/货币金融学核心案例-SVB与现代货币体系深度学习.pptx",
+       "name": "货币金融学核心案例-SVB与现代货币体系深度学习",
+       "ext": "pptx",
+       "size": 369405,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "课程教学/货币金融学/货币金融学第三案例_2020年3月美元荒_全球美元体系与无限QE.pdf",
+       "name": "货币金融学第三案例_2020年3月美元荒_全球美元体系与无限QE",
+       "ext": "pdf",
+       "size": 580638,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "课程教学/货币金融学/货币金融学第三案例_2020年3月美元荒_全球美元体系与无限QE.pptx",
+       "name": "货币金融学第三案例_2020年3月美元荒_全球美元体系与无限QE",
+       "ext": "pptx",
+       "size": 443743,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "课程教学/货币金融学/货币金融学第二案例_雷曼兄弟_影子银行与QE.pdf",
+       "name": "货币金融学第二案例_雷曼兄弟_影子银行与QE",
+       "ext": "pdf",
+       "size": 676110,
+       "date": "2026-08-20"
+      }
+     ]
+    }
+   ],
+   "total": 13
+  },
+  {
+   "name": "系列长文",
+   "key": "series",
+   "blurb": "按『系列』组织的长篇连载，命名《系列名_第X章_标题》，每章一 DOCX。",
+   "folders": [
+    {
+     "name": "钢斧之后",
+     "path": "series/钢斧之后",
+     "count": 8,
+     "files": [
+      {
+       "rel": "series/钢斧之后/钢斧之后_序章_钢斧砍断的不是木头.docx",
+       "name": "钢斧之后_序章_钢斧砍断的不是木头",
+       "ext": "docx",
+       "size": 61475,
+       "date": "2026-07-31"
+      },
+      {
+       "rel": "series/钢斧之后/钢斧之后_第一章_技术究竟是什么.docx",
+       "name": "钢斧之后_第一章_技术究竟是什么",
+       "ext": "docx",
+       "size": 62725,
+       "date": "2026-07-31"
+      },
+      {
+       "rel": "series/钢斧之后/钢斧之后_第七章_水利村社与早期国家.docx",
+       "name": "钢斧之后_第七章_水利村社与早期国家",
+       "ext": "docx",
+       "size": 68011,
+       "date": "2026-07-31"
+      },
+      {
+       "rel": "series/钢斧之后/钢斧之后_第三章_谁被绕过谁成为新入口.docx",
+       "name": "钢斧之后_第三章_谁被绕过谁成为新入口",
+       "ext": "docx",
+       "size": 61843,
+       "date": "2026-07-31"
+      },
+      {
+       "rel": "series/钢斧之后/钢斧之后_第二章_从效率到权力的七步链.docx",
+       "name": "钢斧之后_第二章_从效率到权力的七步链",
+       "ext": "docx",
+       "size": 66706,
+       "date": "2026-07-31"
+      },
+      {
+       "rel": "series/钢斧之后/钢斧之后_第五章_火语言与容器.docx",
+       "name": "钢斧之后_第五章_火语言与容器",
+       "ext": "docx",
+       "size": 63453,
+       "date": "2026-07-31"
+      },
+      {
+       "rel": "series/钢斧之后/钢斧之后_第六章_农业革命.docx",
+       "name": "钢斧之后_第六章_农业革命",
+       "ext": "docx",
+       "size": 64958,
+       "date": "2026-07-31"
+      },
+      {
+       "rel": "series/钢斧之后/钢斧之后_第四章_技术为什么不会自动产生同一种社会.docx",
+       "name": "钢斧之后_第四章_技术为什么不会自动产生同一种社会",
+       "ext": "docx",
+       "size": 76506,
+       "date": "2026-07-31"
+      }
+     ]
+    }
+   ],
+   "total": 8
+  },
+  {
+   "name": "出行档案",
+   "key": "travel",
+   "blurb": "城市的深度旅行攻略：两日游、精确证据版攻略等。",
+   "folders": [
+    {
+     "name": "出行攻略",
+     "path": "出行攻略",
+     "count": 6,
+     "files": [
+      {
+       "rel": "出行攻略/Tokyo_48h_Tokyo_Deep_Travel_Report_FINAL.pdf",
+       "name": "Tokyo_48h_Tokyo_Deep_Travel_Report_FINAL",
+       "ext": "pdf",
+       "size": 1195246,
+       "date": "2026-08-21"
+      },
+      {
+       "rel": "出行攻略/南京周末两日游_DeepResearch专业执行版_世纪大道08点出发_2026-08-22_23.pdf",
+       "name": "南京周末两日游_DeepResearch专业执行版_世纪大道08点出发_2026-08-22_23",
+       "ext": "pdf",
+       "size": 978720,
+       "date": "2026-08-21"
+      },
+      {
+       "rel": "出行攻略/南京周末两日游详细攻略_精确证据版_2026-08-22_23.pdf",
+       "name": "南京周末两日游详细攻略_精确证据版_2026-08-22_23",
+       "ext": "pdf",
+       "size": 1417161,
+       "date": "2026-08-21"
+      },
+      {
+       "rel": "出行攻略/宁波周末两日游详细攻略_精确证据版_2026-08-22_23.pdf",
+       "name": "宁波周末两日游详细攻略_精确证据版_2026-08-22_23",
+       "ext": "pdf",
+       "size": 739937,
+       "date": "2026-08-21"
+      },
+      {
+       "rel": "出行攻略/宁波情侣两日深度旅行攻略_2026-08-22至23.pdf",
+       "name": "宁波情侣两日深度旅行攻略_2026-08-22至23",
+       "ext": "pdf",
+       "size": 997820,
+       "date": "2026-08-21"
+      },
+      {
+       "rel": "出行攻略/扬州两日深度旅行研究_2026-08-22_情侣两人.pdf",
+       "name": "扬州两日深度旅行研究_2026-08-22_情侣两人",
+       "ext": "pdf",
+       "size": 1311435,
+       "date": "2026-08-21"
+      }
+     ]
+    }
+   ],
+   "total": 6
+  },
+  {
+   "name": "城市报告",
+   "key": "reports",
+   "blurb": "城市 / 机构年度报告深度研究合集（PDF 报告与 HTML 成果）。",
+   "folders": [
+    {
+     "name": "城市/机构年度报告",
+     "path": "reports",
+     "count": 132,
+     "files": [
+      {
+       "rel": "reports/七台河市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "七台河市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 44300,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/三亚市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "三亚市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 44503,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/三明市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "三明市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 44507,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/三门峡市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "三门峡市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 51965,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/上海市_2025年政府工作报告_深度研究_2026-08-07.docx",
+       "name": "上海市_2025年政府工作报告_深度研究_2026-08-07",
+       "ext": "docx",
+       "size": 58159,
+       "date": "2026-08-07"
+      },
+      {
+       "rel": "reports/上饶市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "上饶市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 50799,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/东莞市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "东莞市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 43976,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/东营市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "东营市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 49877,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/中卫市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "中卫市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 49969,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/中国澳门_2025年深度研究_2026-08-13.docx",
+       "name": "中国澳门_2025年深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 43699,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/中国香港_2025年深度研究_2026-08-13.docx",
+       "name": "中国香港_2025年深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 44038,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/中山市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "中山市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 43666,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/临汾市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "临汾市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 48816,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/临沂市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "临沂市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 43558,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/临沧市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "临沧市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 48268,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/丹东市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "丹东市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 47381,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/丽水市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "丽水市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 46902,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/丽江市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "丽江市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 46718,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/乌兰察布市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "乌兰察布市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 47043,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/乌海市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "乌海市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 46190,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/乐山市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "乐山市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 46715,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/九江市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "九江市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 45093,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/云南省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "云南省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46526,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/佛山市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "佛山市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 43567,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/保定市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "保定市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 43197,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/兰州市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "兰州市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 44870,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/内蒙古自治区_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "内蒙古自治区_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46271,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/包头市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "包头市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 43383,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/北京市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "北京市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 49867,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/南京市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "南京市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 47619,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/南宁市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "南宁市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 44570,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/南昌市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "南昌市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 47853,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/南通市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "南通市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 47513,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/厦门市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "厦门市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46673,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/合肥市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "合肥市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46234,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/吉林省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "吉林省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46325,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/哈尔滨市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "哈尔滨市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 45774,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/四川省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "四川省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 47058,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/上海北外滩美团餐券性价比指南_2026-08-13.pdf",
+       "name": "上海北外滩美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 141924,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/上海南京东路-人民广场美团餐券性价比指南_2026-08-13.pdf",
+       "name": "上海南京东路-人民广场美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 144472,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/上海南京西路-静安寺美团餐券性价比指南_2026-08-13.pdf",
+       "name": "上海南京西路-静安寺美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 143136,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/上海徐家汇美团餐券性价比指南_2026-08-13.pdf",
+       "name": "上海徐家汇美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 146931,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/上海新天地美团餐券性价比指南_2026-08-13.pdf",
+       "name": "上海新天地美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 570474,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/上海淮海中路美团餐券性价比指南_2026-08-13.pdf",
+       "name": "上海淮海中路美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 823184,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/上海虹桥国际中央商务区美团餐券性价比指南_2026-08-13.pdf",
+       "name": "上海虹桥国际中央商务区美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 140766,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/上海豫园-城隍庙美团餐券性价比指南_2026-08-13.pdf",
+       "name": "上海豫园-城隍庙美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 151244,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/上海陆家嘴-世纪大道美团餐券性价比指南_2026-08-13.pdf",
+       "name": "上海陆家嘴-世纪大道美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 142037,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/南昌万寿宫-八一广场美团餐券性价比指南_2026-08-13.pdf",
+       "name": "南昌万寿宫-八一广场美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 258301,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/南昌凤凰洲-铜锣湾-万象天地美团餐券性价比指南_2026-08-13.pdf",
+       "name": "南昌凤凰洲-铜锣湾-万象天地美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 257816,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/南昌朝阳新城美团餐券性价比指南_2026-08-13.pdf",
+       "name": "南昌朝阳新城美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 250013,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/南昌梦时代-北京东路美团餐券性价比指南_2026-08-13.pdf",
+       "name": "南昌梦时代-北京东路美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 244514,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/南昌红角洲-万象城美团餐券性价比指南_2026-08-13.pdf",
+       "name": "南昌红角洲-万象城美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 252341,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/南昌红谷滩万达美团餐券性价比指南_2026-08-13.pdf",
+       "name": "南昌红谷滩万达美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 253369,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/南昌经开乐盈-紫荆夜市美团餐券性价比指南_2026-08-13.pdf",
+       "name": "南昌经开乐盈-紫荆夜市美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 250021,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/南昌高新吾悦-艾溪湖美团餐券性价比指南_2026-08-13.pdf",
+       "name": "南昌高新吾悦-艾溪湖美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 248977,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/郑州东站-高铁商圈美团餐券性价比指南_2026-08-13.pdf",
+       "name": "郑州东站-高铁商圈美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 256862,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/郑州大学路美团餐券性价比指南_2026-08-13.pdf",
+       "name": "郑州大学路美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 249453,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/郑州惠济-北区美团餐券性价比指南_2026-08-13.pdf",
+       "name": "郑州惠济-北区美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 236684,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/郑州经开区美团餐券性价比指南_2026-08-13.pdf",
+       "name": "郑州经开区美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 250406,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/郑州西区商圈美团餐券性价比指南_2026-08-13.pdf",
+       "name": "郑州西区商圈美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 250333,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/城市生活指南/郑州郑东CBD美团餐券性价比指南_2026-08-13.pdf",
+       "name": "郑州郑东CBD美团餐券性价比指南_2026-08-13",
+       "ext": "pdf",
+       "size": 240109,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/大庆市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "大庆市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 46625,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/大连市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "大连市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 45717,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/天津市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "天津市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 48622,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/宁夏回族自治区_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "宁夏回族自治区_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 45773,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/宁波市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "宁波市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 47122,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/安徽省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "安徽省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46194,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/宜宾市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "宜宾市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 46210,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/宜昌市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "宜昌市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 46237,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/山东省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "山东省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46811,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/山西省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "山西省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46560,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/常州市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "常州市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 45857,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/广东省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "广东省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 47227,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/广州市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "广州市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46331,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/广西壮族自治区_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "广西壮族自治区_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46695,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/徐州市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "徐州市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 45812,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/德州市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "德州市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 45239,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/成都市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "成都市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46322,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/新疆维吾尔自治区_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "新疆维吾尔自治区_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 44776,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/无锡市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "无锡市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 45447,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/昆明市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "昆明市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 43756,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/曲靖市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "曲靖市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 45212,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/杭州市_2025年政府工作报告_深度研究_2026-08-07.docx",
+       "name": "杭州市_2025年政府工作报告_深度研究_2026-08-07",
+       "ext": "docx",
+       "size": 124000,
+       "date": "2026-08-07"
+      },
+      {
+       "rel": "reports/柳州市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "柳州市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 45015,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/武汉市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "武汉市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46284,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/汕头市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "汕头市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 45345,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/江苏省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "江苏省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46989,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/江西省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "江西省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46847,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/沈阳市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "沈阳市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 44101,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/河北省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "河北省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 47282,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/河南省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "河南省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 48141,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/泉州市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "泉州市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 45192,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/洛阳市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "洛阳市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 44905,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/济南市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "济南市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 43847,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/济宁市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "济宁市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 44719,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/浙江省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "浙江省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 47183,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/海南省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "海南省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46952,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/海口市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "海口市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 45231,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/深圳市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "深圳市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46352,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/温州市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "温州市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 44885,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/湖北省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "湖北省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 47278,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/湖南省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "湖南省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46847,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/湛江市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "湛江市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 45069,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/潍坊市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "潍坊市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 44816,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/烟台市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "烟台市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 44794,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/珠海市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "珠海市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 44874,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/甘肃省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "甘肃省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 45334,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/福州市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "福州市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 45094,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/福建省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "福建省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 45900,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/绍兴市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "绍兴市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 44489,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/绵阳市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "绵阳市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 44474,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/聊城市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "聊城市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 44502,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/苏州市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "苏州市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46585,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/菏泽市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "菏泽市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 43883,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/襄阳市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "襄阳市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 44708,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/西宁市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "西宁市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 44199,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/西安市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "西安市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46325,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/西藏自治区_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "西藏自治区_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 44089,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/贵州省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "贵州省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 47087,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/贵阳市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "贵阳市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 45661,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/赣州市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "赣州市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 44527,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/辽宁省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "辽宁省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 45923,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/遵义市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "遵义市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 44457,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/郑州市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "郑州市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46150,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/鄂尔多斯市_2025年政府工作报告_深度研究_2026-08-14.docx",
+       "name": "鄂尔多斯市_2025年政府工作报告_深度研究_2026-08-14",
+       "ext": "docx",
+       "size": 44621,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "reports/重庆市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "重庆市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 50095,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/长春市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "长春市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 44292,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/长沙市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "长沙市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 45703,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/陕西省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "陕西省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46531,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/青岛市_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "青岛市_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46483,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/青海省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "青海省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 45384,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "reports/黑龙江省_2025年政府工作报告_深度研究_2026-08-13.docx",
+       "name": "黑龙江省_2025年政府工作报告_深度研究_2026-08-13",
+       "ext": "docx",
+       "size": 46191,
+       "date": "2026-08-13"
+      }
+     ]
+    }
+   ],
+   "total": 132
+  },
+  {
+   "name": "OpenCode 开发者库",
+   "key": "opencode",
+   "blurb": "OpenCode / Claude Code 生态交付物：cookbook、教程、方案、汇报与深度研究。",
+   "folders": [
+    {
+     "name": "cookbook",
+     "path": "opencode/cookbook",
+     "count": 5,
+     "files": [
+      {
+       "rel": "opencode/cookbook/Claude_Code_Cookbook_2026-08-13.pdf",
+       "name": "Claude_Code_Cookbook_2026-08-13",
+       "ext": "pdf",
+       "size": 1307957,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/cookbook/Mini_Claude_Code_s01_s10_Python_Cookbook_2026-08-13.pdf",
+       "name": "Mini_Claude_Code_s01_s10_Python_Cookbook_2026-08-13",
+       "ext": "pdf",
+       "size": 2593164,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/cookbook/oh-my-openagent_Cookbook_2026-08-13.pdf",
+       "name": "oh-my-openagent_Cookbook_2026-08-13",
+       "ext": "pdf",
+       "size": 1537944,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/cookbook/OpenCode_Cookbook_2026-08-13.pdf",
+       "name": "OpenCode_Cookbook_2026-08-13",
+       "ext": "pdf",
+       "size": 927621,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/cookbook/Pi_Agent_Cookbook_2026-08-13.pdf",
+       "name": "Pi_Agent_Cookbook_2026-08-13",
+       "ext": "pdf",
+       "size": 1095933,
+       "date": "2026-08-13"
+      }
+     ]
+    },
+    {
+     "name": "教程",
+     "path": "opencode/教程",
+     "count": 11,
+     "files": [
+      {
+       "rel": "opencode/教程/Claude_Code_40万会话研究_入门教程_2026-08-13.pdf",
+       "name": "Claude_Code_40万会话研究_入门教程_2026-08-13",
+       "ext": "pdf",
+       "size": 697768,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/教程/Learn_Claude_Code_Progressive_Harness_Tutorial_2026-08-13.pdf",
+       "name": "Learn_Claude_Code_Progressive_Harness_Tutorial_2026-08-13",
+       "ext": "pdf",
+       "size": 1855902,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/教程/mini-omo-progressive-implementation-tutorial_2026-08-13.pdf",
+       "name": "mini-omo-progressive-implementation-tutorial_2026-08-13",
+       "ext": "pdf",
+       "size": 1838185,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/教程/OpenClaw_openclaw_json_配置实践手册_2026-08-20.docx",
+       "name": "OpenClaw_openclaw_json_配置实践手册_2026-08-20",
+       "ext": "docx",
+       "size": 67618,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "opencode/教程/OpenClaw_openclaw_json_配置实践手册_2026-08-20.pdf",
+       "name": "OpenClaw_openclaw_json_配置实践手册_2026-08-20",
+       "ext": "pdf",
+       "size": 1001527,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "opencode/教程/OpenCode_Agent_Skill_从零到工程化_专业蓝白_Windows字体版.pptx",
+       "name": "OpenCode_Agent_Skill_从零到工程化_专业蓝白_Windows字体版",
+       "ext": "pptx",
+       "size": 109088,
+       "date": "2026-08-07"
+      },
+      {
+       "rel": "opencode/教程/OpenCode_Agent_Skill_从零到工程化_入门教程.docx",
+       "name": "OpenCode_Agent_Skill_从零到工程化_入门教程",
+       "ext": "docx",
+       "size": 82486,
+       "date": "2026-08-07"
+      },
+      {
+       "rel": "opencode/教程/OpenCode_Agent_Skill_从零到工程化_入门教程.pptx",
+       "name": "OpenCode_Agent_Skill_从零到工程化_入门教程",
+       "ext": "pptx",
+       "size": 109272,
+       "date": "2026-08-07"
+      },
+      {
+       "rel": "opencode/教程/OpenCode_五大核心机制_入门专题课_2026-08-13.pptx",
+       "name": "OpenCode_五大核心机制_入门专题课_2026-08-13",
+       "ext": "pptx",
+       "size": 478740,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/教程/OpenCode_五大核心机制_入门专题课_深入丰富版_蓝白色调_2026-08-13.pptx",
+       "name": "OpenCode_五大核心机制_入门专题课_深入丰富版_蓝白色调_2026-08-13",
+       "ext": "pptx",
+       "size": 222399,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/教程/OpenCode_五大核心机制_入门级实战教程_2026.pdf",
+       "name": "OpenCode_五大核心机制_入门级实战教程_2026",
+       "ext": "pdf",
+       "size": 994289,
+       "date": "2026-08-13"
+      }
+     ]
+    },
+    {
+     "name": "方案",
+     "path": "opencode/方案",
+     "count": 5,
+     "files": [
+      {
+       "rel": "opencode/方案/OpenCode_iAgent0731_vs_ClaudeCode_深度调查与改造方案_V2.pdf",
+       "name": "OpenCode_iAgent0731_vs_ClaudeCode_深度调查与改造方案_V2",
+       "ext": "pdf",
+       "size": 1282275,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "opencode/方案/OpenCode_iAgent_Standard_对齐_Claude_Code_改造方案.docx",
+       "name": "OpenCode_iAgent_Standard_对齐_Claude_Code_改造方案",
+       "ext": "docx",
+       "size": 56448,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/方案/OpenCode_iAgent_Standard_对齐_Claude_Code_改造方案.pdf",
+       "name": "OpenCode_iAgent_Standard_对齐_Claude_Code_改造方案",
+       "ext": "pdf",
+       "size": 719132,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/方案/OpenCode_Native_Loop_改造可行性与架构方案_2026-08-12.docx",
+       "name": "OpenCode_Native_Loop_改造可行性与架构方案_2026-08-12",
+       "ext": "docx",
+       "size": 566942,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/方案/OpenCode_Native_Loop_改造可行性与架构方案_2026-08-12.pdf",
+       "name": "OpenCode_Native_Loop_改造可行性与架构方案_2026-08-12",
+       "ext": "pdf",
+       "size": 1132694,
+       "date": "2026-08-13"
+      }
+     ]
+    },
+    {
+     "name": "汇报",
+     "path": "opencode/汇报",
+     "count": 2,
+     "files": [
+      {
+       "rel": "opencode/汇报/OpenCode_iAgent_Standard_公司例会汇报.pptx",
+       "name": "OpenCode_iAgent_Standard_公司例会汇报",
+       "ext": "pptx",
+       "size": 412643,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/汇报/OpenCode_Native_Loop_公司例会汇报.pptx",
+       "name": "OpenCode_Native_Loop_公司例会汇报",
+       "ext": "pptx",
+       "size": 408606,
+       "date": "2026-08-13"
+      }
+     ]
+    },
+    {
+     "name": "深度研究",
+     "path": "opencode/深度研究",
+     "count": 90,
+     "files": [
+      {
+       "rel": "opencode/深度研究/Agent工程/ACE_Agentic_Context_Engineering_完整研究_2026-08-14.pdf",
+       "name": "ACE_Agentic_Context_Engineering_完整研究_2026-08-14",
+       "ext": "pdf",
+       "size": 1535713,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "opencode/深度研究/Agent工程/ACM_Agentic_Context_Management_完整研究_2026-08-13.pdf",
+       "name": "ACM_Agentic_Context_Management_完整研究_2026-08-13",
+       "ext": "pdf",
+       "size": 1288334,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/Agent工程/AdaCoM_Context_Management_完整研究_2026-08-13.pdf",
+       "name": "AdaCoM_Context_Management_完整研究_2026-08-13",
+       "ext": "pdf",
+       "size": 1484983,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/Agent工程/Agent_Harness_效率决策与质量边界_工程分析.pdf",
+       "name": "Agent_Harness_效率决策与质量边界_工程分析",
+       "ext": "pdf",
+       "size": 1062084,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "opencode/深度研究/Agent工程/Anthropic_Claude_Code_Tool机制迭代史_研究报告_2026-08-13.pdf",
+       "name": "Anthropic_Claude_Code_Tool机制迭代史_研究报告_2026-08-13",
+       "ext": "pdf",
+       "size": 1175999,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/Agent工程/Anthropic_Harness_Design_Long_Running_Apps_深度研究报告_2026-08-13.pdf",
+       "name": "Anthropic_Harness_Design_Long_Running_Apps_深度研究报告_2026-08-13",
+       "ext": "pdf",
+       "size": 947903,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/Agent工程/Claude_Code_Source_Architecture_Deep_Analysis_2026-08-13.pdf",
+       "name": "Claude_Code_Source_Architecture_Deep_Analysis_2026-08-13",
+       "ext": "pdf",
+       "size": 2042779,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/Agent工程/DeerFlow_2.0_Deep_Research_完整研究_2026-08-13.pdf",
+       "name": "DeerFlow_2.0_Deep_Research_完整研究_2026-08-13",
+       "ext": "pdf",
+       "size": 1152558,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/Agent工程/Graph_Engineer_vs_Loop_Engineer_深度研究报告_2026-08-13.pdf",
+       "name": "Graph_Engineer_vs_Loop_Engineer_深度研究报告_2026-08-13",
+       "ext": "pdf",
+       "size": 1229727,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/Agent工程/iagent-gateway-sglang_深度研究报告_2026-08-11.pdf",
+       "name": "iagent-gateway-sglang_深度研究报告_2026-08-11",
+       "ext": "pdf",
+       "size": 559240,
+       "date": "2026-08-11"
+      },
+      {
+       "rel": "opencode/深度研究/Agent工程/InfoQ_Agent_企业规模化落地与硅基团队治理_深度研究报告_2026-08-13.pdf",
+       "name": "InfoQ_Agent_企业规模化落地与硅基团队治理_深度研究报告_2026-08-13",
+       "ext": "pdf",
+       "size": 1553288,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/Agent工程/PACE_Predictive_Adaptive_Context_Extraction_完整研究_2026-08-13.pdf",
+       "name": "PACE_Predictive_Adaptive_Context_Extraction_完整研究_2026-08-13",
+       "ext": "pdf",
+       "size": 1712552,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "opencode/深度研究/Agent工程/Pi_agent_loop_ts_深度研究报告_2026-08-13.pdf",
+       "name": "Pi_agent_loop_ts_深度研究报告_2026-08-13",
+       "ext": "pdf",
+       "size": 890505,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/Agent工程/Pi_Extension_高级实践与推荐指南.pdf",
+       "name": "Pi_Extension_高级实践与推荐指南",
+       "ext": "pdf",
+       "size": 489445,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "opencode/深度研究/Agent工程/Pi_Source_Code_深度研究报告_2026-08-13.pdf",
+       "name": "Pi_Source_Code_深度研究报告_2026-08-13",
+       "ext": "pdf",
+       "size": 1172429,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/Agent工程/Ralph_Loop_深度研究报告_2026-08-13.pdf",
+       "name": "Ralph_Loop_深度研究报告_2026-08-13",
+       "ext": "pdf",
+       "size": 1189532,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/Agent工程/中国互联网_Agent基础设施地图_2026.pdf",
+       "name": "中国互联网_Agent基础设施地图_2026",
+       "ext": "pdf",
+       "size": 1248814,
+       "date": "2026-08-20"
+      },
+      {
+       "rel": "opencode/深度研究/其它报告/2025全球集装箱港口Top20深度研究报告_2026-08-13.pdf",
+       "name": "2025全球集装箱港口Top20深度研究报告_2026-08-13",
+       "ext": "pdf",
+       "size": 1277977,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/其它报告/China_Top100_University_Financials_2026_2026-08-13.xlsx",
+       "name": "China_Top100_University_Financials_2026_2026-08-13",
+       "ext": "xlsx",
+       "size": 53922,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/其它报告/China_Top100_University_Financials_2026_Report_2026-08-13.pdf",
+       "name": "China_Top100_University_Financials_2026_Report_2026-08-13",
+       "ext": "pdf",
+       "size": 1167592,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/其它报告/Global_Top100_University_Financials_QS2027_2026-08-13.xlsx",
+       "name": "Global_Top100_University_Financials_QS2027_2026-08-13",
+       "ext": "xlsx",
+       "size": 64562,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/其它报告/Global_Top100_University_Financials_QS2027_Report_2026-08-13.pdf",
+       "name": "Global_Top100_University_Financials_QS2027_Report_2026-08-13",
+       "ext": "pdf",
+       "size": 1516744,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/后训练/LLM后训练之Data Filtering_深度研究手册_2026-08-13.pdf",
+       "name": "LLM后训练之Data Filtering_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1530757,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/后训练/LLM后训练之Data Flywheel_深度研究手册.pdf",
+       "name": "LLM后训练之Data Flywheel_深度研究手册",
+       "ext": "pdf",
+       "size": 1286871,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/后训练/LLM后训练之Distillation_深度研究手册_2026-08-13.pdf",
+       "name": "LLM后训练之Distillation_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1208548,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/后训练/LLM后训练之Evaluation_深度研究手册_2026-08-13.pdf",
+       "name": "LLM后训练之Evaluation_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 809589,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/后训练/LLM后训练之Experimentation & Governance_深度研究手册.pdf",
+       "name": "LLM后训练之Experimentation & Governance_深度研究手册",
+       "ext": "pdf",
+       "size": 1246994,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/后训练/LLM后训练之Failure Mining_深度研究手册_2026-08-13.pdf",
+       "name": "LLM后训练之Failure Mining_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1092791,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/后训练/LLM后训练之Judge_Verifier_深度研究手册_2026-08-13.pdf",
+       "name": "LLM后训练之Judge_Verifier_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1500104,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/后训练/LLM后训练之Model Release & Deployment Governance_深度研究手册.pdf",
+       "name": "LLM后训练之Model Release & Deployment Governance_深度研究手册",
+       "ext": "pdf",
+       "size": 1028265,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "opencode/深度研究/后训练/LLM后训练之Post-Training Infrastructure_深度研究手册.pdf",
+       "name": "LLM后训练之Post-Training Infrastructure_深度研究手册",
+       "ext": "pdf",
+       "size": 1544077,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/后训练/LLM后训练之Preference Optimization_深度研究手册_2026-08-13.pdf",
+       "name": "LLM后训练之Preference Optimization_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 864673,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/后训练/LLM后训练之Prompt Factory_深度研究手册_2026-08-13.pdf",
+       "name": "LLM后训练之Prompt Factory_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1530423,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/后训练/LLM后训练之Response Generation_深度研究手册_2026-08-13.pdf",
+       "name": "LLM后训练之Response Generation_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1527700,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/后训练/LLM后训练之RL_RLVR_深度研究手册_2026-08-13.pdf",
+       "name": "LLM后训练之RL_RLVR_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1134592,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/后训练/LLM后训练之SFT_深度研究手册_2026-08-13.pdf",
+       "name": "LLM后训练之SFT_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1573662,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/后训练/LLM后训练之Synthetic Data_深度研究手册_2026-08-13.pdf",
+       "name": "LLM后训练之Synthetic Data_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1343676,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/后训练/LLM后训练之Task Distribution_深度研究手册_2026-08-13.pdf",
+       "name": "LLM后训练之Task Distribution_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1333697,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/后训练/LLM后训练之目标定义_深度研究手册_2026-08-13.pdf",
+       "name": "LLM后训练之目标定义_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1023489,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/工具对比/AgentFold_Deep_Research_完整研究_2026-08-13.pdf",
+       "name": "AgentFold_Deep_Research_完整研究_2026-08-13",
+       "ext": "pdf",
+       "size": 1351122,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/工具对比/CaRR_Deep_Research_完整研究_2026-08-13.pdf",
+       "name": "CaRR_Deep_Research_完整研究_2026-08-13",
+       "ext": "pdf",
+       "size": 1395188,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/工具对比/DeepResearcher_Deep_Research_完整研究_2026-08-13.pdf",
+       "name": "DeepResearcher_Deep_Research_完整研究_2026-08-13",
+       "ext": "pdf",
+       "size": 1574502,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/工具对比/DR_Tulu_Deep_Research_完整研究_2026-08-13.pdf",
+       "name": "DR_Tulu_Deep_Research_完整研究_2026-08-13",
+       "ext": "pdf",
+       "size": 1331209,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/工具对比/Function_Calling_MCP_Code_Mode_深度对比_金字塔原理.pdf",
+       "name": "Function_Calling_MCP_Code_Mode_深度对比_金字塔原理",
+       "ext": "pdf",
+       "size": 1153411,
+       "date": "2026-08-21"
+      },
+      {
+       "rel": "opencode/深度研究/工具对比/GPT_Researcher_Deep_Research_完整研究_2026-08-13.pdf",
+       "name": "GPT_Researcher_Deep_Research_完整研究_2026-08-13",
+       "ext": "pdf",
+       "size": 1380436,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/工具对比/LangChain_Open_Deep_Research_完整研究_2026-08-13.pdf",
+       "name": "LangChain_Open_Deep_Research_完整研究_2026-08-13",
+       "ext": "pdf",
+       "size": 1588892,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/工具对比/LongSeeker_Context_ReAct_Deep_Research_完整研究_2026-08-13.pdf",
+       "name": "LongSeeker_Context_ReAct_Deep_Research_完整研究_2026-08-13",
+       "ext": "pdf",
+       "size": 1245323,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/工具对比/MindSearch_Deep_Research_完整研究_2026-08-13.pdf",
+       "name": "MindSearch_Deep_Research_完整研究_2026-08-13",
+       "ext": "pdf",
+       "size": 1574984,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/工具对比/PaperQA2_Scientific_Deep_Research_完整研究_2026-08-13.pdf",
+       "name": "PaperQA2_Scientific_Deep_Research_完整研究_2026-08-13",
+       "ext": "pdf",
+       "size": 1129594,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/工具对比/ReSum_Long_Horizon_Deep_Research_完整研究_2026-08-13.pdf",
+       "name": "ReSum_Long_Horizon_Deep_Research_完整研究_2026-08-13",
+       "ext": "pdf",
+       "size": 1339425,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/工具对比/STORM_CoSTORM_Deep_Research_完整研究_2026-08-13.pdf",
+       "name": "STORM_CoSTORM_Deep_Research_完整研究_2026-08-13",
+       "ext": "pdf",
+       "size": 1521220,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/工具对比/Tongyi_DeepResearch_完整研究_2026-08-13.pdf",
+       "name": "Tongyi_DeepResearch_完整研究_2026-08-13",
+       "ext": "pdf",
+       "size": 1627731,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/工具对比/WebThinker_Deep_Research_完整研究_2026-08-13.pdf",
+       "name": "WebThinker_Deep_Research_完整研究_2026-08-13",
+       "ext": "pdf",
+       "size": 1844716,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/章节/01_cli_entry_modes.pdf",
+       "name": "01_cli_entry_modes",
+       "ext": "pdf",
+       "size": 299280,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/章节/02_package_architecture.pdf",
+       "name": "02_package_architecture",
+       "ext": "pdf",
+       "size": 312054,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/章节/03_message_to_api.pdf",
+       "name": "03_message_to_api",
+       "ext": "pdf",
+       "size": 306618,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/章节/04_agent_loop.pdf",
+       "name": "04_agent_loop",
+       "ext": "pdf",
+       "size": 294014,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/章节/05_provider_abstraction.pdf",
+       "name": "05_provider_abstraction",
+       "ext": "pdf",
+       "size": 298418,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/章节/06_tools_pipeline.pdf",
+       "name": "06_tools_pipeline",
+       "ext": "pdf",
+       "size": 298638,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/章节/07_system_prompt.pdf",
+       "name": "07_system_prompt",
+       "ext": "pdf",
+       "size": 285758,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/章节/08_session_tree.pdf",
+       "name": "08_session_tree",
+       "ext": "pdf",
+       "size": 305557,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/章节/09_compaction.pdf",
+       "name": "09_compaction",
+       "ext": "pdf",
+       "size": 286805,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/章节/10_extensions.pdf",
+       "name": "10_extensions",
+       "ext": "pdf",
+       "size": 321251,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_Attention_深度研究手册_2026-08-13.pdf",
+       "name": "LLM预训练_Attention_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1122713,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_Backpropagation_GradientFlow_深度研究手册.pdf",
+       "name": "LLM预训练_Backpropagation_GradientFlow_深度研究手册",
+       "ext": "pdf",
+       "size": 792658,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_Embedding_深度研究手册_2026-08-13.pdf",
+       "name": "LLM预训练_Embedding_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1083677,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_FFN_MLP_SwiGLU_深度分析_2026.pdf",
+       "name": "LLM预训练_FFN_MLP_SwiGLU_深度分析_2026",
+       "ext": "pdf",
+       "size": 1297889,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_LayerNormRMSNorm_深度分析_2026.pdf",
+       "name": "LLM预训练_LayerNormRMSNorm_深度分析_2026",
+       "ext": "pdf",
+       "size": 1317844,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_LearningRateSchedule_深度研究手册.pdf",
+       "name": "LLM预训练_LearningRateSchedule_深度研究手册",
+       "ext": "pdf",
+       "size": 1025438,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_LMHead_深度研究手册.pdf",
+       "name": "LLM预训练_LMHead_深度研究手册",
+       "ext": "pdf",
+       "size": 984721,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_Loss_TrainingObjective_深度研究手册.pdf",
+       "name": "LLM预训练_Loss_TrainingObjective_深度研究手册",
+       "ext": "pdf",
+       "size": 934958,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_MLP_FFN_深度研究手册_2026-08-13.pdf",
+       "name": "LLM预训练_MLP_FFN_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1162333,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_MultiHeadAttention_深度分析_2026.pdf",
+       "name": "LLM预训练_MultiHeadAttention_深度分析_2026",
+       "ext": "pdf",
+       "size": 1392837,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_Optimizer_AdamW_深度研究手册.pdf",
+       "name": "LLM预训练_Optimizer_AdamW_深度研究手册",
+       "ext": "pdf",
+       "size": 1106843,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_PositionEmbedding_深度分析_2026.pdf",
+       "name": "LLM预训练_PositionEmbedding_深度分析_2026",
+       "ext": "pdf",
+       "size": 1693312,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_PositionEncoding_深度研究手册_2026-08-13.pdf",
+       "name": "LLM预训练_PositionEncoding_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1144252,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_QKVProjection_深度分析_2026.pdf",
+       "name": "LLM预训练_QKVProjection_深度分析_2026",
+       "ext": "pdf",
+       "size": 1105336,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_ResidualConnection_深度分析_2026.pdf",
+       "name": "LLM预训练_ResidualConnection_深度分析_2026",
+       "ext": "pdf",
+       "size": 1051770,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_ScaledDotProductAttention_深度分析_2026.pdf",
+       "name": "LLM预训练_ScaledDotProductAttention_深度分析_2026",
+       "ext": "pdf",
+       "size": 1193720,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_Sequence构造_深度研究手册_2026-08-13.pdf",
+       "name": "LLM预训练_Sequence构造_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1105478,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_Tokenizer_深度研究手册_2026-08-13.pdf",
+       "name": "LLM预训练_Tokenizer_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1292617,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_TransformerStack_深度研究手册_2026-08-13.pdf",
+       "name": "LLM预训练_TransformerStack_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1168502,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_数据层_Data_Pipeline_深度研究手册_2026-08-13.pdf",
+       "name": "LLM预训练_数据层_Data_Pipeline_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 963073,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_数据混合_深度研究手册_2026-08-13.pdf",
+       "name": "LLM预训练_数据混合_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 985144,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_数据清洗_深度研究手册_2026-08-13.pdf",
+       "name": "LLM预训练_数据清洗_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 859912,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_数据解析_深度研究手册_2026-08-13.pdf",
+       "name": "LLM预训练_数据解析_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 952843,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_数据质量评分_深度研究手册_2026-08-13.pdf",
+       "name": "LLM预训练_数据质量评分_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1000514,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/LLM预训练_训练采样_Sampling_深度研究手册_2026-08-13.pdf",
+       "name": "LLM预训练_训练采样_Sampling_深度研究手册_2026-08-13",
+       "ext": "pdf",
+       "size": 1135342,
+       "date": "2026-08-13"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/神经网络优化器_发展历史_公式与深度对比.docx",
+       "name": "神经网络优化器_发展历史_公式与深度对比",
+       "ext": "docx",
+       "size": 59248,
+       "date": "2026-08-14"
+      },
+      {
+       "rel": "opencode/深度研究/预训练/神经网络优化器_发展历史_公式与深度对比.pdf",
+       "name": "神经网络优化器_发展历史_公式与深度对比",
+       "ext": "pdf",
+       "size": 805985,
+       "date": "2026-08-14"
+      }
+     ]
+    }
+   ],
+   "total": 113
+  },
+  {
+   "name": "基金研究",
+   "key": "fund",
+   "blurb": "主动权益 Beta 数据库与研究管线。",
+   "folders": [
+    {
+     "name": "stock-fund",
+     "path": "stock-fund",
+     "count": 1,
+     "files": [
+      {
+       "rel": "stock-fund/中国主动权益基金_Beta数据库_核验版_2026-08-25.xlsx",
+       "name": "中国主动权益基金_Beta数据库_核验版_2026-08-25",
+       "ext": "xlsx",
+       "size": 65804,
+       "date": "2026-08-25"
+      }
+     ]
+    }
+   ],
+   "total": 1
+  },
+  {
+   "name": "技术与产品方案",
+   "key": "proposals",
+   "blurb": "技术 / 产品方案文档。",
+   "folders": [
+    {
+     "name": "proposals",
+     "path": "proposals",
+     "count": 1,
+     "files": [
+      {
+       "rel": "proposals/智能座舱_分层式端云协同AI系统总体方案_v1.0.docx",
+       "name": "智能座舱_分层式端云协同AI系统总体方案_v1.0",
+       "ext": "docx",
+       "size": 422717,
+       "date": "2026-08-07"
+      }
+     ]
+    }
+   ],
+   "total": 1
+  }
+ ],
+ "generated": "2026-09-02"
+}
